@@ -94,11 +94,11 @@ V4_FUZZY/From71
 V4_FUZZY/From8
 V4_FUZZY/From9
 V4_FUZZY/Fuzzy Logic 
-Controller - Alt
+Controller - Aleron
 V4_FUZZY/Fuzzy Logic 
-Controller1
+Controller - Altura
 V4_FUZZY/Fuzzy Logic 
-Controller3
+Controller - Timon
 V4_FUZZY/Gain
 V4_FUZZY/Gain-Z
 V4_FUZZY/Gain-roll_sp

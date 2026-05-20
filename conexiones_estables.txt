@@ -198,12 +198,12 @@ V4_FUZZY/SUBSYSTEM_MODEL/Mux4 [Pin out:1] --(control_vector)-- V4_FUZZY/SUBSYSTE
 V4_FUZZY/SUBSYSTEM_MODEL/Demux4 [Pin out:3] --(sig_Demux4_p3)-- V4_FUZZY/SUBSYSTEM_MODEL/Out3 [Pin in:1]
 V4_FUZZY/Sum3 [Pin out:1] --(sig_Sum3_p1)-- V4_FUZZY/PID VELOCIDAD [Pin in:1]
 V4_FUZZY/Fuzzy Logic 
-Controller3 [Pin out:1] --(sig_Fuzzy Logic 
-Controller3_p1)-- V4_FUZZY/Goto19 [Pin in:1]
+Controller - Timon [Pin out:1] --(sig_Fuzzy Logic 
+Controller - Timon_p1)-- V4_FUZZY/Goto19 [Pin in:1]
 V4_FUZZY/PID ELEVATOR [Pin out:1] --(sig_PID ELEVATOR_p1)-- V4_FUZZY/Goto17 [Pin in:1]
 V4_FUZZY/Fuzzy Logic 
-Controller - Alt [Pin out:1] --(sig_Fuzzy Logic 
-Controller - Alt_p1)-- V4_FUZZY/Goto16 [Pin in:1]
+Controller - Aleron [Pin out:1] --(sig_Fuzzy Logic 
+Controller - Aleron_p1)-- V4_FUZZY/Goto16 [Pin in:1]
 V4_FUZZY/From2 [Pin out:1] --(sig_From2_p1)-- V4_FUZZY/Scopes-States [Pin in:10]
 V4_FUZZY/Mux8 [Pin out:1] --(sig_Mux8_p1)-- V4_FUZZY/Scopes-States [Pin in:9]
 V4_FUZZY/From57 [Pin out:1] --(sig_From57_p1)-- V4_FUZZY/MATLAB Function-ned_to_gazebo [Pin in:4]
@@ -404,10 +404,10 @@ V4_FUZZY/Switch3 [Pin out:1] --(sig_Switch3_p1)-- V4_FUZZY/Unit Delay3 [Pin in:1
 V4_FUZZY/Unit Delay3 [Pin out:1] --(sig_Unit Delay3_p1)-- V4_FUZZY/Switch3 [Pin in:3]
 V4_FUZZY/Subscribe-ALTURA [Pin out:1] --(sig_Subscribe-ALTURA_p1)-- V4_FUZZY/Switch3 [Pin in:2]
 V4_FUZZY/Fuzzy Logic 
-Controller1 [Pin out:1] --(sig_Fuzzy Logic 
-Controller1_p1)-- V4_FUZZY/Goto [Pin in:1]
+Controller - Altura [Pin out:1] --(sig_Fuzzy Logic 
+Controller - Altura_p1)-- V4_FUZZY/Goto [Pin in:1]
 V4_FUZZY/Sum2 [Pin out:1] --(sig_Sum2_p1)-- V4_FUZZY/Fuzzy Logic 
-Controller1 [Pin in:1]
+Controller - Altura [Pin in:1]
 V4_FUZZY/PID VELOCIDAD [Pin out:1] --(sig_PID VELOCIDAD_p1)-- V4_FUZZY/Goto21 [Pin in:1]
 V4_FUZZY/PID VELOCIDAD [Pin out:1] --(sig_PID VELOCIDAD_p1)-- V4_FUZZY/Scope-velocidad [Pin in:2]
 V4_FUZZY/SUBSYSTEM_MODEL [Pin out:1] --(sig_SUBSYSTEM_MODEL_p1)-- V4_FUZZY/Goto20 [Pin in:1]
@@ -415,7 +415,7 @@ V4_FUZZY/Mux4 [Pin out:1] --(sig_Mux4_p1)-- V4_FUZZY/Scopes-States [Pin in:5]
 V4_FUZZY/Mux6 [Pin out:1] --(sig_Mux6_p1)-- V4_FUZZY/Scopes-States [Pin in:3]
 V4_FUZZY/Sum5 [Pin out:1] --(sig_Sum5_p1)-- V4_FUZZY/Goto22 [Pin in:1]
 V4_FUZZY/Sum5 [Pin out:1] --(sig_Sum5_p1)-- V4_FUZZY/Fuzzy Logic 
-Controller3 [Pin in:1]
+Controller - Timon [Pin in:1]
 V4_FUZZY/Subscribe-YAW [Pin out:2] --(sig_Subscribe-YAW_p2)-- V4_FUZZY/Bus
 Selector2 [Pin in:1]
 V4_FUZZY/Unit Delay2 [Pin out:1] --(sig_Unit Delay2_p1)-- V4_FUZZY/Switch2 [Pin in:3]
@@ -423,7 +423,7 @@ V4_FUZZY/Bus
 Selector2 [Pin out:1] --(<data>)-- V4_FUZZY/Switch2 [Pin in:1]
 V4_FUZZY/Subscribe-YAW [Pin out:1] --(sig_Subscribe-YAW_p1)-- V4_FUZZY/Switch2 [Pin in:2]
 V4_FUZZY/Sum4 [Pin out:1] --(sig_Sum4_p1)-- V4_FUZZY/Fuzzy Logic 
-Controller - Alt [Pin in:1]
+Controller - Aleron [Pin in:1]
 V4_FUZZY/Demux [Pin out:5] --(thrust2)-- V4_FUZZY/Mux1 [Pin in:5]
 V4_FUZZY/Demux [Pin out:4] --(thrust1)-- V4_FUZZY/Mux1 [Pin in:4]
 V4_FUZZY/Demux [Pin out:2] --(elevator)-- V4_FUZZY/Mux1 [Pin in:2]
