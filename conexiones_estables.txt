@@ -196,11 +196,20 @@ V4_FUZZY/SUBSYSTEM_MODEL/In1 [Pin out:1] --(sig_In1_p1)-- V4_FUZZY/SUBSYSTEM_MOD
 V4_FUZZY/SUBSYSTEM_MODEL/Mux4 [Pin out:1] --(control_vector)-- V4_FUZZY/SUBSYSTEM_MODEL/To Workspace1 [Pin in:1]
 V4_FUZZY/SUBSYSTEM_MODEL/Mux4 [Pin out:1] --(control_vector)-- V4_FUZZY/SUBSYSTEM_MODEL/MATLAB Function - MODEL [Pin in:2]
 V4_FUZZY/SUBSYSTEM_MODEL/Demux4 [Pin out:3] --(sig_Demux4_p3)-- V4_FUZZY/SUBSYSTEM_MODEL/Out3 [Pin in:1]
+V4_FUZZY/Derivative1 [Pin out:1] --(sig_Derivative1_p1)-- V4_FUZZY/Fuzzy Logic 
+Controller - Aleron [Pin in:1]
+V4_FUZZY/Fuzzy Logic 
+Controller - Pitch [Pin out:1] --(sig_Fuzzy Logic 
+Controller - Pitch_p1)-- V4_FUZZY/Goto17 [Pin in:1]
+V4_FUZZY/From25 [Pin out:1] --(sig_From25_p1)-- V4_FUZZY/Sum4 [Pin in:2] [Signs:|+-]
+V4_FUZZY/Derivative [Pin out:1] --(sig_Derivative_p1)-- V4_FUZZY/Fuzzy Logic 
+Controller - Altura [Pin in:1]
 V4_FUZZY/Sum3 [Pin out:1] --(sig_Sum3_p1)-- V4_FUZZY/PID VELOCIDAD [Pin in:1]
 V4_FUZZY/Fuzzy Logic 
 Controller - Timon [Pin out:1] --(sig_Fuzzy Logic 
 Controller - Timon_p1)-- V4_FUZZY/Goto19 [Pin in:1]
-V4_FUZZY/PID ELEVATOR [Pin out:1] --(sig_PID ELEVATOR_p1)-- V4_FUZZY/Goto17 [Pin in:1]
+V4_FUZZY/Sum1 [Pin out:1] --(sig_Sum1_p1)-- V4_FUZZY/Fuzzy Logic 
+Controller - Pitch [Pin in:1]
 V4_FUZZY/Fuzzy Logic 
 Controller - Aleron [Pin out:1] --(sig_Fuzzy Logic 
 Controller - Aleron_p1)-- V4_FUZZY/Goto16 [Pin in:1]
@@ -313,12 +322,9 @@ V4_FUZZY/Ramp [Pin out:1] --(sig_Ramp_p1)-- V4_FUZZY/Saturation1 [Pin in:1]
 V4_FUZZY/From43 [Pin out:1] --(sig_From43_p1)-- V4_FUZZY/Gain [Pin in:1]
 V4_FUZZY/Rate Limiter2 [Pin out:1] --(sig_Rate Limiter2_p1)-- V4_FUZZY/Sum5 [Pin in:1] [Signs:|+-]
 V4_FUZZY/Rate Limiter2 [Pin out:1] --(sig_Rate Limiter2_p1)-- V4_FUZZY/Goto18 [Pin in:1]
-V4_FUZZY/Saturation [Pin out:1] --(sig_Saturation_p1)-- V4_FUZZY/Sum4 [Pin in:2] [Signs:|++-]
-V4_FUZZY/From25 [Pin out:1] --(sig_From25_p1)-- V4_FUZZY/Sum4 [Pin in:3] [Signs:|++-]
 V4_FUZZY/Gain [Pin out:1] --(sig_Gain_p1)-- V4_FUZZY/Saturation [Pin in:1]
 V4_FUZZY/From3 [Pin out:1] --(sig_From3_p1)-- V4_FUZZY/Mux2 [Pin in:2]
 V4_FUZZY/From4 [Pin out:1] --(sig_From4_p1)-- V4_FUZZY/Mux2 [Pin in:1]
-V4_FUZZY/Sum1 [Pin out:1] --(sig_Sum1_p1)-- V4_FUZZY/PID ELEVATOR [Pin in:1]
 V4_FUZZY/From23 [Pin out:1] --(sig_From23_p1)-- V4_FUZZY/Sum1 [Pin in:2] [Signs:|+-]
 V4_FUZZY/Rate Limiter-theta_sp [Pin out:1] --(sig_Rate Limiter-theta_sp_p1)-- V4_FUZZY/Sum1 [Pin in:1] [Signs:|+-]
 V4_FUZZY/From22 [Pin out:1] --(sig_From22_p1)-- V4_FUZZY/Rate Limiter-theta_sp [Pin in:1]
@@ -358,7 +364,7 @@ Assignment-MODELO [Pin in:8]
 V4_FUZZY/MATLAB Function-ned_to_imu [Pin out:3] --(sig_MATLAB Function-ned_to_imu_p3)-- V4_FUZZY/Bus
 Assignment-IMU [Pin in:4]
 V4_FUZZY/Saturation_roll_sp [Pin out:1] --(sig_Saturation_roll_sp_p1)-- V4_FUZZY/Goto15 [Pin in:1]
-V4_FUZZY/Saturation_roll_sp [Pin out:1] --(sig_Saturation_roll_sp_p1)-- V4_FUZZY/Sum4 [Pin in:1] [Signs:|++-]
+V4_FUZZY/Saturation_roll_sp [Pin out:1] --(sig_Saturation_roll_sp_p1)-- V4_FUZZY/Sum4 [Pin in:1] [Signs:|+-]
 V4_FUZZY/Gain-roll_sp [Pin out:1] --(sig_Gain-roll_sp_p1)-- V4_FUZZY/Saturation_roll_sp [Pin in:1]
 V4_FUZZY/Demux1 [Pin out:4] --(sig_Demux1_p4)-- V4_FUZZY/Goto26 [Pin in:1]
 V4_FUZZY/Demux1 [Pin out:1] --(sig_Demux1_p1)-- V4_FUZZY/Goto29 [Pin in:1]
@@ -406,14 +412,12 @@ V4_FUZZY/Subscribe-ALTURA [Pin out:1] --(sig_Subscribe-ALTURA_p1)-- V4_FUZZY/Swi
 V4_FUZZY/Fuzzy Logic 
 Controller - Altura [Pin out:1] --(sig_Fuzzy Logic 
 Controller - Altura_p1)-- V4_FUZZY/Goto [Pin in:1]
-V4_FUZZY/Sum2 [Pin out:1] --(sig_Sum2_p1)-- V4_FUZZY/Fuzzy Logic 
-Controller - Altura [Pin in:1]
+V4_FUZZY/Sum2 [Pin out:1] --(sig_Sum2_p1)-- V4_FUZZY/Derivative [Pin in:1]
 V4_FUZZY/PID VELOCIDAD [Pin out:1] --(sig_PID VELOCIDAD_p1)-- V4_FUZZY/Goto21 [Pin in:1]
 V4_FUZZY/PID VELOCIDAD [Pin out:1] --(sig_PID VELOCIDAD_p1)-- V4_FUZZY/Scope-velocidad [Pin in:2]
 V4_FUZZY/SUBSYSTEM_MODEL [Pin out:1] --(sig_SUBSYSTEM_MODEL_p1)-- V4_FUZZY/Goto20 [Pin in:1]
 V4_FUZZY/Mux4 [Pin out:1] --(sig_Mux4_p1)-- V4_FUZZY/Scopes-States [Pin in:5]
 V4_FUZZY/Mux6 [Pin out:1] --(sig_Mux6_p1)-- V4_FUZZY/Scopes-States [Pin in:3]
-V4_FUZZY/Sum5 [Pin out:1] --(sig_Sum5_p1)-- V4_FUZZY/Goto22 [Pin in:1]
 V4_FUZZY/Sum5 [Pin out:1] --(sig_Sum5_p1)-- V4_FUZZY/Fuzzy Logic 
 Controller - Timon [Pin in:1]
 V4_FUZZY/Subscribe-YAW [Pin out:2] --(sig_Subscribe-YAW_p2)-- V4_FUZZY/Bus
@@ -422,8 +426,7 @@ V4_FUZZY/Unit Delay2 [Pin out:1] --(sig_Unit Delay2_p1)-- V4_FUZZY/Switch2 [Pin 
 V4_FUZZY/Bus
 Selector2 [Pin out:1] --(<data>)-- V4_FUZZY/Switch2 [Pin in:1]
 V4_FUZZY/Subscribe-YAW [Pin out:1] --(sig_Subscribe-YAW_p1)-- V4_FUZZY/Switch2 [Pin in:2]
-V4_FUZZY/Sum4 [Pin out:1] --(sig_Sum4_p1)-- V4_FUZZY/Fuzzy Logic 
-Controller - Aleron [Pin in:1]
+V4_FUZZY/Sum4 [Pin out:1] --(sig_Sum4_p1)-- V4_FUZZY/Derivative1 [Pin in:1]
 V4_FUZZY/Demux [Pin out:5] --(thrust2)-- V4_FUZZY/Mux1 [Pin in:5]
 V4_FUZZY/Demux [Pin out:4] --(thrust1)-- V4_FUZZY/Mux1 [Pin in:4]
 V4_FUZZY/Demux [Pin out:2] --(elevator)-- V4_FUZZY/Mux1 [Pin in:2]

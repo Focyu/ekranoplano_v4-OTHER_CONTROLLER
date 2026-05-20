@@ -14,7 +14,6 @@
 [GOTO] V4_FUZZY/Goto2  ->  Tag: orientationZ
 [GOTO] V4_FUZZY/Goto20  ->  Tag: VELOCIDADX_ACTUAL
 [GOTO] V4_FUZZY/Goto21  ->  Tag: PID_VEL
-[GOTO] V4_FUZZY/Goto22  ->  Tag: u_yaw
 [GOTO] V4_FUZZY/Goto23  ->  Tag: px
 [GOTO] V4_FUZZY/Goto24  ->  Tag: py
 [GOTO] V4_FUZZY/Goto25  ->  Tag: pz
@@ -98,7 +97,6 @@
 [FROM] V4_FUZZY/From40  <-  Tag: PID_TIMON
 [FROM] V4_FUZZY/From41  <-  Tag: VELOCIDADX_ACTUAL
 [FROM] V4_FUZZY/From42  <-  Tag: PID_VEL
-[FROM] V4_FUZZY/From43  <-  Tag: u_yaw
 [FROM] V4_FUZZY/From44  <-  Tag: px
 [FROM] V4_FUZZY/From45  <-  Tag: py
 [FROM] V4_FUZZY/From46  <-  Tag: pz

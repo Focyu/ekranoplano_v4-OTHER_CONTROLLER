@@ -20,6 +20,8 @@ V4_FUZZY/Constant_U
 V4_FUZZY/Coordinate Transformation Conversion
 V4_FUZZY/Demux
 V4_FUZZY/Demux1
+V4_FUZZY/Derivative
+V4_FUZZY/Derivative1
 V4_FUZZY/Display
 V4_FUZZY/From
 V4_FUZZY/From1
@@ -59,7 +61,6 @@ V4_FUZZY/From4
 V4_FUZZY/From40
 V4_FUZZY/From41
 V4_FUZZY/From42
-V4_FUZZY/From43
 V4_FUZZY/From44
 V4_FUZZY/From45
 V4_FUZZY/From46
@@ -98,8 +99,9 @@ Controller - Aleron
 V4_FUZZY/Fuzzy Logic 
 Controller - Altura
 V4_FUZZY/Fuzzy Logic 
+Controller - Pitch
+V4_FUZZY/Fuzzy Logic 
 Controller - Timon
-V4_FUZZY/Gain
 V4_FUZZY/Gain-Z
 V4_FUZZY/Gain-roll_sp
 V4_FUZZY/Goto
@@ -117,7 +119,6 @@ V4_FUZZY/Goto19
 V4_FUZZY/Goto2
 V4_FUZZY/Goto20
 V4_FUZZY/Goto21
-V4_FUZZY/Goto22
 V4_FUZZY/Goto23
 V4_FUZZY/Goto24
 V4_FUZZY/Goto25
@@ -159,7 +160,6 @@ V4_FUZZY/Mux5
 V4_FUZZY/Mux6
 V4_FUZZY/Mux7
 V4_FUZZY/Mux8
-V4_FUZZY/PID ELEVATOR
 V4_FUZZY/PID VELOCIDAD
 V4_FUZZY/Publish
 V4_FUZZY/Publish1
@@ -336,7 +336,6 @@ V4_FUZZY/SUBSYSTEM_MODEL/x_wp
 V4_FUZZY/SUBSYSTEM_MODEL/y_wp
 V4_FUZZY/SUBSYSTEM_MODEL/y_pos
 V4_FUZZY/SUBSYSTEM_MODEL/Out12
-V4_FUZZY/Saturation
 V4_FUZZY/Saturation1
 V4_FUZZY/Saturation_roll_sp
 V4_FUZZY/Scope-Direccion
