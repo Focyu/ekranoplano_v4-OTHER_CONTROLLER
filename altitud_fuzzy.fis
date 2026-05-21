@@ -4,7 +4,7 @@ Type='mamdani'
 Version=2.0
 NumInputs=2
 NumOutputs=1
-NumRules=8
+NumRules=13
 AndMethod='min'
 OrMethod='max'
 ImpMethod='min'
@@ -31,20 +31,26 @@ MF3='P':'trimf',[0 1 1]
 
 [Output1]
 Name='theta_sp'
-Range=[-0.1 0.15]
+Range=[-0.07 0.10]
 NumMFs=5
-MF1='bajar_fuerte':'trimf',[-0.1 -0.1 -0.02]
-MF2='bajar':'trimf',[-0.05 -0.02 0.02]
-MF3='mantener':'trimf',[-0.02 0 0.02]
-MF4='subir':'trimf',[0.02 0.05 0.1]
-MF5='subir_fuerte':'trimf',[0.08 0.15 0.15]
+MF1='bajar_fuerte':'trimf',[-0.07 -0.07 -0.025]
+MF2='bajar':        'trimf',[-0.04 -0.015  0.0]
+MF3='mantener':     'trimf',[-0.01  0.0    0.01]
+MF4='subir':        'trimf',[ 0.0   0.02   0.05]
+MF5='subir_fuerte': 'trimf',[ 0.03  0.10   0.10]
+
 
 [Rules]
 5 3, 5 (1) : 1
 5 2, 4 (1) : 1
+5 1, 3 (1) : 1
 4 3, 4 (1) : 1
 4 2, 3 (1) : 1
+4 1, 2 (1) : 1
 3 2, 3 (1) : 1
 3 1, 2 (1) : 1
+3 3, 4 (1) : 1
 2 2, 2 (1) : 1
+2 3, 3 (1) : 1
 1 1, 1 (1) : 1
+1 2, 1 (1) : 1

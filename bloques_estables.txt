@@ -22,6 +22,9 @@ V4_FUZZY/Demux
 V4_FUZZY/Demux1
 V4_FUZZY/Derivative
 V4_FUZZY/Derivative1
+V4_FUZZY/Derivative2
+V4_FUZZY/Derivative3
+V4_FUZZY/Derivative4
 V4_FUZZY/Display
 V4_FUZZY/From
 V4_FUZZY/From1
@@ -92,6 +95,7 @@ V4_FUZZY/From69
 V4_FUZZY/From7
 V4_FUZZY/From70
 V4_FUZZY/From71
+V4_FUZZY/From72
 V4_FUZZY/From8
 V4_FUZZY/From9
 V4_FUZZY/Fuzzy Logic 
@@ -102,6 +106,8 @@ V4_FUZZY/Fuzzy Logic
 Controller - Pitch
 V4_FUZZY/Fuzzy Logic 
 Controller - Timon
+V4_FUZZY/Fuzzy Logic 
+Controller - Velocidad
 V4_FUZZY/Gain-Z
 V4_FUZZY/Gain-roll_sp
 V4_FUZZY/Goto
@@ -154,13 +160,17 @@ V4_FUZZY/MATLAB Function2
 V4_FUZZY/Manual Switch
 V4_FUZZY/Mux
 V4_FUZZY/Mux1
+V4_FUZZY/Mux10
+V4_FUZZY/Mux11
+V4_FUZZY/Mux12
+V4_FUZZY/Mux13
 V4_FUZZY/Mux2
 V4_FUZZY/Mux4
 V4_FUZZY/Mux5
 V4_FUZZY/Mux6
 V4_FUZZY/Mux7
 V4_FUZZY/Mux8
-V4_FUZZY/PID VELOCIDAD
+V4_FUZZY/Mux9
 V4_FUZZY/Publish
 V4_FUZZY/Publish1
 V4_FUZZY/Publish2

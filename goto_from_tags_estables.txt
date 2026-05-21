@@ -128,6 +128,7 @@
 [FROM] V4_FUZZY/From7  <-  Tag: orientationZ
 [FROM] V4_FUZZY/From70  <-  Tag: pz
 [FROM] V4_FUZZY/From71  <-  Tag: x_in
+[FROM] V4_FUZZY/From72  <-  Tag: positionX
 [FROM] V4_FUZZY/From8  <-  Tag: x_in
 [FROM] V4_FUZZY/From9  <-  Tag: orientationY
 [FROM] V4_FUZZY/SUBSYSTEM_MODEL/From  <-  Tag: phi_interno

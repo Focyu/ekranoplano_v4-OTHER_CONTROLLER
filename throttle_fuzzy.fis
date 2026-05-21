@@ -17,7 +17,7 @@ Range=[-25 25]
 NumMFs=5
 MF1='NL':'trimf',[-25 -25 -10]
 MF2='N':'trimf',[-18 -7 0]
-MF3='Z':'trimf',[-5 0 5]
+MF3='Z':'trimf',[-2 0 2]
 MF4='P':'trimf',[0 7 18]
 MF5='PL':'trimf',[10 25 25]
 
@@ -33,11 +33,11 @@ MF3='P':'trimf',[0 5 5]
 Name='throttle'
 Range=[0 1]
 NumMFs=5
-MF1='muy_bajo':'trimf',[0 0 0.2]
-MF2='bajo':'trimf',[0.1 0.25 0.4]
-MF3='medio':'trimf',[0.3 0.5 0.7]
-MF4='alto':'trimf',[0.6 0.75 0.9]
-MF5='muy_alto':'trimf',[0.8 1 1]
+MF1='muy_bajo':'trimf',[0 0 0.15]
+MF2='bajo':'trimf',[0.15 0.35 0.50]
+MF3='medio':'trimf',[0.35 0.50 0.65]
+MF4='alto':'trimf',[0.70 0.83 0.95]
+MF5='muy_alto':'trimf',[0.85 1 1]
 
 [Rules]
 1 1, 1 (1) : 1
