@@ -21,12 +21,12 @@ step = 0.01;
 x_nom = zeros(12,1);
 
 % Velocidad y ángulo de trimado calculado
-x_nom(1)  = 0.1;           % u [m/s] — velocidad crucero
+x_nom(1)  = 020.1;           % u [m/s] — velocidad crucero
 x_nom(3)  = 0;              % w [m/s]
 x_nom(8)  = 1.5*(pi/180);   % theta trimado (~1.5° con iw=1.5°)
 x_nom(10) = 0;              % x_NED
 x_nom(11) = 0;              % y_NED
-x_nom(12) = -0.50;         % z_NED (altura = 0.55 m)
+x_nom(12) = -1.50;         % z_NED (altura = 0.55 m)
 
 % Throttle inicial: calculado para equilibrar drag
 % D_cruise ≈ 0.93 N (con CD_0=0.042), Tp_each ≈ 0.465 N
