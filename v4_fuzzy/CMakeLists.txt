@@ -67,7 +67,7 @@ target_compile_options(V4_FUZZY PRIVATE
   $<$<OR:$<COMPILE_LANGUAGE:CXX>,$<COMPILE_LANGUAGE:C>>:
   -DMODEL=V4_FUZZY
   -DNUMST=2
-  -DNCSTATES=36
+  -DNCSTATES=32
   -DHAVESTDIO
   -DMODEL_HAS_DYNAMICALLY_LOADED_SFCNS=0
   -DCLASSIC_INTERFACE=0
@@ -144,4 +144,4 @@ add_custom_command(
 				   )				   
 endforeach(file_i)
 ament_package()
-# Generated on Wed May 20 13:23:54 2026
+# Generated on Sun May 24 10:28:47 2026

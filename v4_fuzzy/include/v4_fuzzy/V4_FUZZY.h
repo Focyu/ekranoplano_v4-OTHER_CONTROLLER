@@ -6,9 +6,9 @@
  *
  * Code generation for model "V4_FUZZY".
  *
- * Model version              : 12.185
+ * Model version              : 13.4
  * Simulink Coder version : 26.1 (R2026a) 20-Nov-2025
- * C++ source code generated on : Wed May 20 13:23:22 2026
+ * C++ source code generated on : Sun May 24 10:28:20 2026
  *
  * Target selection: ert.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -178,21 +178,21 @@ struct B_MATLABFunctionned_to_PoseSt_T {
   uint8_T stringOut[128];      /* '<Root>/MATLAB Function-ned_to_PoseStamped' */
 };
 
-/* Block signals for system '<S155>/Enabled Subsystem' */
+/* Block signals for system '<S53>/Enabled Subsystem' */
 struct B_EnabledSubsystem_V4_FUZZY_T {
-  SL_Bus_std_msgs_Bool In1;            /* '<S198>/In1' */
+  SL_Bus_std_msgs_Bool In1;            /* '<S96>/In1' */
 };
 
-/* Block signals for system '<S156>/Enabled Subsystem' */
+/* Block signals for system '<S54>/Enabled Subsystem' */
 struct B_EnabledSubsystem_V4_FUZZY_d_T {
-  SL_Bus_std_msgs_Float64 In1;         /* '<S199>/In1' */
+  SL_Bus_std_msgs_Float64 In1;         /* '<S97>/In1' */
 };
 
 /* Block signals (default storage) */
 struct B_V4_FUZZY_T {
   real_T outputMFCache[505];
   SL_Bus_nav_msgs_Odometry BusAssignmentODOM;/* '<Root>/Bus Assignment-ODOM' */
-  real_T aggregatedOutputs_b[101];     /* '<S8>/Evaluate Rule Consequents' */
+  real_T aggregatedOutputs[101];       /* '<S11>/Evaluate Rule Consequents' */
   real_T dv[101];
   real_T dv1[101];
   real_T dv2[101];
@@ -204,12 +204,7 @@ struct B_V4_FUZZY_T {
                                       /* '<Root>/Bus Assignment-PoseStaamped' */
   SL_Bus_geometry_msgs_TwistStamped BusAssignmentTwistStamped;
                                       /* '<Root>/Bus Assignment-TwistStamped' */
-  uint8_T str_out[128];                /* '<Root>/MATLAB Function-Odometry1' */
-  uint8_T str_out_c[128];              /* '<Root>/MATLAB Function-Odometry' */
-  uint8_T stringOut[128];              /* '<Root>/MATLAB Function-MODELO' */
-  uint8_T stringOut_c[128];            /* '<Root>/MATLAB Function-IMU2' */
-  uint8_T stringOut_b[128];            /* '<Root>/MATLAB Function' */
-  real_T antecedentOutputs[15];        /* '<S9>/Evaluate Rule Antecedents' */
+  real_T antecedentOutputs[15];        /* '<S11>/Evaluate Rule Antecedents' */
   real_T IC[12];                       /* '<S30>/IC' */
   real_T x[12];                        /* '<S30>/Integrator' */
   real_T R[9];
@@ -217,16 +212,13 @@ struct B_V4_FUZZY_T {
                         /* '<S30>/Rotation Angles to Direction Cosine Matrix' */
   real_T dv5[9];
   real_T inputMFCache[8];
-  real_T antecedentOutputs_l[8];       /* '<S8>/Evaluate Rule Antecedents' */
   char_T b_zeroDelimTopic[26];
   char_T b_zeroDelimTopic_m[25];
   char_T b_zeroDelimTopic_c[25];
-  real_T Switch_p[3];                  /* '<S30>/Switch' */
-  real_T Switch1[3];                   /* '<S30>/Switch1' */
   real_T wbe_b[3];
   real_T FE1_b[3];
   real_T F_b[3];
-  real_T Product_k[3];                 /* '<S191>/Product' */
+  real_T Product_k[3];                 /* '<S89>/Product' */
   real_T Dtot[3];
   char_T b_zeroDelimTopic_cx[22];
   char_T b_zeroDelimTopic_b[22];
@@ -247,25 +239,25 @@ struct B_V4_FUZZY_T {
   sJ4ih70VmKcvCeguWN0mNVF deadline_ld;
   sJ4ih70VmKcvCeguWN0mNVF lifespan_d;
   sJ4ih70VmKcvCeguWN0mNVF deadline_dy;
-  real_T Lv[2];                        /* '<S167>/Lv' */
+  real_T Lw[2];                        /* '<S65>/Lw' */
   real_T dv6[2];
-  real_T Switch2_l[2];                 /* '<Root>/Switch2' */
   real_T GainZ;                        /* '<Root>/Gain-Z' */
-  real_T FilterCoefficient;            /* '<S135>/Filter Coefficient' */
-  real_T Saturation;                   /* '<S139>/Saturation' */
-  real_T Switch3[2];                   /* '<Root>/Switch3' */
-  real_T RateLimiter2[2];              /* '<Root>/Rate Limiter2' */
+  real_T Sum3;                         /* '<Root>/Sum3' */
+  real_T Switch3;                      /* '<Root>/Switch3' */
+  real_T RateLimiter2;                 /* '<Root>/Rate Limiter2' */
+  real_T Sum5;                         /* '<Root>/Sum5' */
   real_T Saturation_roll_sp;           /* '<Root>/Saturation_roll_sp' */
+  real_T Sum4;                         /* '<Root>/Sum4' */
   real_T RateLimitertheta_sp;          /* '<Root>/Rate Limiter-theta_sp' */
-  real_T FilterCoefficient_a;          /* '<S81>/Filter Coefficient' */
-  real_T Saturation_d;                 /* '<S85>/Saturation' */
-  real_T Switch;                       /* '<S68>/Switch' */
-  real_T Switch_f;                     /* '<S122>/Switch' */
+  real_T Sum1;                         /* '<Root>/Sum1' */
+  real_T Sum2;                         /* '<Root>/Sum2' */
   real_T Memory[3];                    /* '<S30>/Memory' */
   real_T Memory1[3];                   /* '<S30>/Memory1' */
-  real_T Product[4];                   /* '<S170>/Product' */
+  real_T Product[4];                   /* '<S68>/Product' */
+  real_T Switch[3];                    /* '<S30>/Switch' */
+  real_T Switch1[3];                   /* '<S30>/Switch1' */
   real_T Switch2;                      /* '<S30>/Switch2' */
-  real_T Output;                       /* '<S150>/Output' */
+  real_T Output;                       /* '<S48>/Output' */
   real_T Switch3_l;                    /* '<S30>/Switch3' */
   real_T Power;                        /* '<S30>/Product2' */
   real_T Gain3;                        /* '<S30>/Gain3' */
@@ -275,20 +267,22 @@ struct B_V4_FUZZY_T {
   real_T SumOLA[3];                    /* '<S30>/SumOLA' */
   real_T SumOLA1[3];                   /* '<S30>/SumOLA1' */
   real_T XDOT[40];                     /* '<S30>/MATLAB Function - MODEL' */
-  real_T w[2];                         /* '<S176>/w' */
-  real_T w_a[2];                       /* '<S176>/w ' */
-  real_T LwgV1[2];                     /* '<S176>/Lwg//V 1' */
-  real_T w_g[2];                       /* '<S175>/w' */
-  real_T w_e[2];                       /* '<S175>/w ' */
-  real_T w1[2];                        /* '<S175>/w 1' */
-  real_T w_n[2];                       /* '<S174>/w' */
-  real_T w1_c[2];                      /* '<S174>/w1' */
-  real_T w_d[2];                       /* '<S173>/w' */
-  real_T w_e0[2];                      /* '<S172>/w' */
-  real_T UnaryMinus[2];                /* '<S172>/Unary Minus' */
-  real_T w_o[2];                       /* '<S171>/w' */
-  real_T sigma_w[2];                   /* '<S171>/sigma_w' */
-  real_T defuzzifiedOutputs;           /* '<S9>/Defuzzify Outputs' */
+  real_T w[2];                         /* '<S74>/w' */
+  real_T w_a[2];                       /* '<S74>/w ' */
+  real_T LwgV1[2];                     /* '<S74>/Lwg//V 1' */
+  real_T w_g[2];                       /* '<S73>/w' */
+  real_T w_e[2];                       /* '<S73>/w ' */
+  real_T w1[2];                        /* '<S73>/w 1' */
+  real_T w_n[2];                       /* '<S72>/w' */
+  real_T w1_c[2];                      /* '<S72>/w1' */
+  real_T w_d[2];                       /* '<S71>/w' */
+  real_T w_e0[2];                      /* '<S70>/w' */
+  real_T UnaryMinus[2];                /* '<S70>/Unary Minus' */
+  real_T w_o[2];                       /* '<S69>/w' */
+  real_T sigma_w[2];                   /* '<S69>/sigma_w' */
+  real_T defuzzifiedOutputs;           /* '<S11>/Defuzzify Outputs' */
+  real_T defuzzifiedOutputs_p;         /* '<S10>/Defuzzify Outputs' */
+  real_T defuzzifiedOutputs_g;         /* '<S9>/Defuzzify Outputs' */
   real_T defuzzifiedOutputs_o;         /* '<S8>/Defuzzify Outputs' */
   real_T defuzzifiedOutputs_k;         /* '<S7>/Defuzzify Outputs' */
   real_T u1;
@@ -319,19 +313,21 @@ struct B_V4_FUZZY_T {
   real_T FE2_b_idx_0;
   real_T FE2_b_idx_2;
   real_T Fg_b_idx_2;
+  real_T rtb_CoordinateTransformationC_l;
   real_T rtb_CoordinateTransformationC_o;
   real_T rtb_CoordinateTransformationC_b;
-  real_T rtb_CoordinateTransformationC_n;
   real_T FE_b_idx_0;
   real_T FA_b_idx_0;
   real_T FA_b_idx_1;
   real_T FA_b_idx_2;
   real_T R_tmp;
-  real_T R_tmp_b;
+  real_T R_tmp_n;
+  real_T Switch2_b;                    /* '<Root>/Switch2' */
   real_T a;
   real_T b;
-  SL_Bus_std_msgs_Float64 SourceBlock_o2_k;/* '<S157>/SourceBlock' */
-  SL_Bus_std_msgs_Float64 SourceBlock_o2_p;/* '<S156>/SourceBlock' */
+  real_T c;
+  SL_Bus_std_msgs_Float64 SourceBlock_o2_k;/* '<S55>/SourceBlock' */
+  SL_Bus_std_msgs_Float64 SourceBlock_o2_p;/* '<S54>/SourceBlock' */
   SL_Bus_std_msgs_Float64 SourceBlock_o2;/* '<S32>/SourceBlock' */
   SL_Bus_std_msgs_Float64 SourceBlock_o2_d;/* '<S31>/SourceBlock' */
   uint32_T bpIndex[2];
@@ -342,23 +338,24 @@ struct B_V4_FUZZY_T {
   uint32_T lengthOut;                  /* '<Root>/MATLAB Function-MODELO' */
   uint32_T lengthOut_o;                /* '<Root>/MATLAB Function-IMU2' */
   uint32_T lengthOut_l;                /* '<Root>/MATLAB Function' */
-  boolean_T Compare;                   /* '<S151>/Compare' */
-  boolean_T AND3;                      /* '<S68>/AND3' */
-  boolean_T Memory_k;                  /* '<S68>/Memory' */
-  boolean_T AND3_p;                    /* '<S122>/AND3' */
-  boolean_T Memory_h;                  /* '<S122>/Memory' */
+  uint8_T str_out[128];                /* '<Root>/MATLAB Function-Odometry1' */
+  uint8_T str_out_c[128];              /* '<Root>/MATLAB Function-Odometry' */
+  uint8_T stringOut[128];              /* '<Root>/MATLAB Function-MODELO' */
+  uint8_T stringOut_c[128];            /* '<Root>/MATLAB Function-IMU2' */
+  uint8_T stringOut_b[128];            /* '<Root>/MATLAB Function' */
+  boolean_T Compare;                   /* '<S49>/Compare' */
   boolean_T SourceBlock_o1;            /* '<S32>/SourceBlock' */
   boolean_T SourceBlock_o1_o;          /* '<S31>/SourceBlock' */
-  boolean_T SourceBlock_o1_h;          /* '<S158>/SourceBlock' */
-  boolean_T SourceBlock_o1_d;          /* '<S157>/SourceBlock' */
-  boolean_T SourceBlock_o1_c;          /* '<S156>/SourceBlock' */
-  boolean_T SourceBlock_o1_k;          /* '<S155>/SourceBlock' */
+  boolean_T SourceBlock_o1_h;          /* '<S56>/SourceBlock' */
+  boolean_T SourceBlock_o1_d;          /* '<S55>/SourceBlock' */
+  boolean_T SourceBlock_o1_c;          /* '<S54>/SourceBlock' */
+  boolean_T SourceBlock_o1_k;          /* '<S53>/SourceBlock' */
   B_EnabledSubsystem_V4_FUZZY_d_T EnabledSubsystem_a;/* '<S32>/Enabled Subsystem' */
   B_EnabledSubsystem_V4_FUZZY_d_T EnabledSubsystem_b;/* '<S31>/Enabled Subsystem' */
-  B_EnabledSubsystem_V4_FUZZY_T EnabledSubsystem_pt;/* '<S158>/Enabled Subsystem' */
-  B_EnabledSubsystem_V4_FUZZY_d_T EnabledSubsystem_p;/* '<S157>/Enabled Subsystem' */
-  B_EnabledSubsystem_V4_FUZZY_d_T EnabledSubsystem_k;/* '<S156>/Enabled Subsystem' */
-  B_EnabledSubsystem_V4_FUZZY_T EnabledSubsystem;/* '<S155>/Enabled Subsystem' */
+  B_EnabledSubsystem_V4_FUZZY_T EnabledSubsystem_pt;/* '<S56>/Enabled Subsystem' */
+  B_EnabledSubsystem_V4_FUZZY_d_T EnabledSubsystem_p;/* '<S55>/Enabled Subsystem' */
+  B_EnabledSubsystem_V4_FUZZY_d_T EnabledSubsystem_k;/* '<S54>/Enabled Subsystem' */
+  B_EnabledSubsystem_V4_FUZZY_T EnabledSubsystem;/* '<S53>/Enabled Subsystem' */
   B_MATLABFunctionned_to_PoseSt_T sf_MATLABFunctionned_to_TwistSt;
                               /* '<Root>/MATLAB Function-ned_to_TwistStamped' */
   B_MATLABFunctionned_to_PoseSt_T sf_MATLABFunctionned_to_PoseS_b;
@@ -374,43 +371,61 @@ struct DW_V4_FUZZY_T {
   ros_slros2_internal_block_Pub_T obj_i;/* '<S25>/SinkBlock' */
   ros_slros2_internal_block_Sub_T obj_k;/* '<S32>/SourceBlock' */
   ros_slros2_internal_block_Sub_T obj_m;/* '<S31>/SourceBlock' */
-  ros_slros2_internal_block_Sub_T obj_h;/* '<S158>/SourceBlock' */
-  ros_slros2_internal_block_Sub_T obj_p;/* '<S157>/SourceBlock' */
-  ros_slros2_internal_block_Sub_T obj_hy;/* '<S156>/SourceBlock' */
-  ros_slros2_internal_block_Sub_T obj_h4;/* '<S155>/SourceBlock' */
-  real_T UnitDelay3_DSTATE[2];         /* '<Root>/Unit Delay3' */
-  real_T UnitDelay2_DSTATE[2];         /* '<Root>/Unit Delay2' */
+  ros_slros2_internal_block_Sub_T obj_h;/* '<S56>/SourceBlock' */
+  ros_slros2_internal_block_Sub_T obj_p;/* '<S55>/SourceBlock' */
+  ros_slros2_internal_block_Sub_T obj_hy;/* '<S54>/SourceBlock' */
+  ros_slros2_internal_block_Sub_T obj_h4;/* '<S53>/SourceBlock' */
+  real_T UnitDelay3_DSTATE;            /* '<Root>/Unit Delay3' */
+  real_T UnitDelay2_DSTATE;            /* '<Root>/Unit Delay2' */
   real_T Memory2_PreviousInput[12];    /* '<S30>/Memory2' */
-  real_T PrevY[2];                     /* '<Root>/Rate Limiter2' */
+  real_T TimeStampA;                   /* '<Root>/Derivative4' */
+  real_T LastUAtTimeA;                 /* '<Root>/Derivative4' */
+  real_T TimeStampB;                   /* '<Root>/Derivative4' */
+  real_T LastUAtTimeB;                 /* '<Root>/Derivative4' */
+  real_T PrevY;                        /* '<Root>/Rate Limiter2' */
+  real_T TimeStampA_c;                 /* '<Root>/Derivative3' */
+  real_T LastUAtTimeA_g;               /* '<Root>/Derivative3' */
+  real_T TimeStampB_c;                 /* '<Root>/Derivative3' */
+  real_T LastUAtTimeB_f;               /* '<Root>/Derivative3' */
+  real_T TimeStampA_p;                 /* '<Root>/Derivative1' */
+  real_T LastUAtTimeA_p;               /* '<Root>/Derivative1' */
+  real_T TimeStampB_f;                 /* '<Root>/Derivative1' */
+  real_T LastUAtTimeB_e;               /* '<Root>/Derivative1' */
   real_T PrevY_g;                      /* '<Root>/Rate Limiter-theta_sp' */
   real_T LastMajorTime;                /* '<Root>/Rate Limiter-theta_sp' */
+  real_T TimeStampA_j;                 /* '<Root>/Derivative2' */
+  real_T LastUAtTimeA_m;               /* '<Root>/Derivative2' */
+  real_T TimeStampB_g;                 /* '<Root>/Derivative2' */
+  real_T LastUAtTimeB_fy;              /* '<Root>/Derivative2' */
+  real_T TimeStampA_n;                 /* '<Root>/Derivative' */
+  real_T LastUAtTimeA_j;               /* '<Root>/Derivative' */
+  real_T TimeStampB_gy;                /* '<Root>/Derivative' */
+  real_T LastUAtTimeB_h;               /* '<Root>/Derivative' */
   real_T Memory_PreviousInput[3];      /* '<S30>/Memory' */
   real_T Memory1_PreviousInput[3];     /* '<S30>/Memory1' */
-  real_T NextOutput[4];                /* '<S170>/White Noise' */
-  real_T NextOutput_k;                 /* '<S150>/White Noise' */
+  real_T NextOutput[4];                /* '<S68>/White Noise' */
+  real_T NextOutput_k;                 /* '<S48>/White Noise' */
   uint32_T PreLookUpIndexSearchprobofexcee;
-                        /* '<S177>/PreLook-Up Index Search  (prob of exceed)' */
+                         /* '<S75>/PreLook-Up Index Search  (prob of exceed)' */
   uint32_T PreLookUpIndexSearchaltitude_DW;
-                              /* '<S177>/PreLook-Up Index Search  (altitude)' */
-  uint32_T RandSeed[4];                /* '<S170>/White Noise' */
-  uint32_T RandSeed_a;                 /* '<S150>/White Noise' */
+                               /* '<S75>/PreLook-Up Index Search  (altitude)' */
+  uint32_T RandSeed[4];                /* '<S68>/White Noise' */
+  uint32_T RandSeed_a;                 /* '<S48>/White Noise' */
   robotics_slcore_internal_bloc_T obj_c;
                              /* '<Root>/Coordinate Transformation Conversion' */
   int8_T ifHeightMaxlowaltitudeelseifHei;
-  /* '<S166>/if Height < Max low altitude  elseif Height > Min isotropic altitude ' */
+  /* '<S64>/if Height < Max low altitude  elseif Height > Min isotropic altitude ' */
   int8_T ifHeightMaxlowaltitudeelseifH_a;
-  /* '<S165>/if Height < Max low altitude  elseif Height > Min isotropic altitude ' */
+  /* '<S63>/if Height < Max low altitude  elseif Height > Min isotropic altitude ' */
   boolean_T IC_FirstOutputTime;        /* '<S30>/IC' */
   boolean_T Integrator_DWORK1;         /* '<S30>/Integrator' */
   boolean_T PrevLimited;               /* '<Root>/Rate Limiter-theta_sp' */
-  boolean_T Memory_PreviousInput_f;    /* '<S68>/Memory' */
-  boolean_T Memory_PreviousInput_k;    /* '<S122>/Memory' */
   boolean_T objisempty;                /* '<S32>/SourceBlock' */
   boolean_T objisempty_g;              /* '<S31>/SourceBlock' */
-  boolean_T objisempty_a;              /* '<S158>/SourceBlock' */
-  boolean_T objisempty_e;              /* '<S157>/SourceBlock' */
-  boolean_T objisempty_l;              /* '<S156>/SourceBlock' */
-  boolean_T objisempty_c;              /* '<S155>/SourceBlock' */
+  boolean_T objisempty_a;              /* '<S56>/SourceBlock' */
+  boolean_T objisempty_e;              /* '<S55>/SourceBlock' */
+  boolean_T objisempty_l;              /* '<S54>/SourceBlock' */
+  boolean_T objisempty_c;              /* '<S53>/SourceBlock' */
   boolean_T objisempty_cr;             /* '<S28>/SinkBlock' */
   boolean_T objisempty_ld;             /* '<S27>/SinkBlock' */
   boolean_T objisempty_ev;             /* '<S26>/SinkBlock' */
@@ -421,72 +436,60 @@ struct DW_V4_FUZZY_T {
   boolean_T objisempty_f;              /* '<S6>/ServiceCaller' */
   e_robotics_core_internal_vali_T fctrlobj;
                              /* '<Root>/Coordinate Transformation Conversion' */
-  boolean_T Hwgws_MODE;                /* '<S161>/Hwgw(s)' */
-  boolean_T Hvgws_MODE;                /* '<S161>/Hvgw(s)' */
-  boolean_T Hugws_MODE;                /* '<S161>/Hugw(s)' */
-  boolean_T Hrgw_MODE;                 /* '<S160>/Hrgw' */
-  boolean_T Hqgw_MODE;                 /* '<S160>/Hqgw' */
-  boolean_T Hpgw_MODE;                 /* '<S160>/Hpgw' */
+  boolean_T Hwgws_MODE;                /* '<S59>/Hwgw(s)' */
+  boolean_T Hvgws_MODE;                /* '<S59>/Hvgw(s)' */
+  boolean_T Hugws_MODE;                /* '<S59>/Hugw(s)' */
+  boolean_T Hrgw_MODE;                 /* '<S58>/Hrgw' */
+  boolean_T Hqgw_MODE;                 /* '<S58>/Hqgw' */
+  boolean_T Hpgw_MODE;                 /* '<S58>/Hpgw' */
 };
 
 /* Continuous states (default storage) */
 struct X_V4_FUZZY_T {
   real_T Integrator_CSTATE[12];        /* '<S30>/Integrator' */
-  real_T Integrator_CSTATE_d;          /* '<S132>/Integrator' */
-  real_T Filter_CSTATE;                /* '<S127>/Filter' */
-  real_T Integrator_CSTATE_e;          /* '<S78>/Integrator' */
-  real_T Filter_CSTATE_f;              /* '<S73>/Filter' */
   real_T TransferFcn_CSTATE[2];        /* '<S30>/Transfer Fcn' */
   real_T TransferFcn1_CSTATE;          /* '<S30>/Transfer Fcn1' */
   real_T Integrator1_CSTATE;           /* '<S30>/Integrator1' */
-  real_T wg_p1_CSTATE[2];              /* '<S176>/wg_p1' */
-  real_T wg_p2_CSTATE[2];              /* '<S176>/wg_p2' */
-  real_T vg_p1_CSTATE[2];              /* '<S175>/vg_p1' */
-  real_T vgw_p2_CSTATE[2];             /* '<S175>/vgw_p2' */
-  real_T ug_p_CSTATE[2];               /* '<S174>/ug_p' */
-  real_T rgw_p_CSTATE[2];              /* '<S173>/rgw_p' */
-  real_T qgw_p_CSTATE[2];              /* '<S172>/qgw_p' */
-  real_T pgw_p_CSTATE[2];              /* '<S171>/pgw_p' */
+  real_T wg_p1_CSTATE[2];              /* '<S74>/wg_p1' */
+  real_T wg_p2_CSTATE[2];              /* '<S74>/wg_p2' */
+  real_T vg_p1_CSTATE[2];              /* '<S73>/vg_p1' */
+  real_T vgw_p2_CSTATE[2];             /* '<S73>/vgw_p2' */
+  real_T ug_p_CSTATE[2];               /* '<S72>/ug_p' */
+  real_T rgw_p_CSTATE[2];              /* '<S71>/rgw_p' */
+  real_T qgw_p_CSTATE[2];              /* '<S70>/qgw_p' */
+  real_T pgw_p_CSTATE[2];              /* '<S69>/pgw_p' */
 };
 
 /* State derivatives (default storage) */
 struct XDot_V4_FUZZY_T {
   real_T Integrator_CSTATE[12];        /* '<S30>/Integrator' */
-  real_T Integrator_CSTATE_d;          /* '<S132>/Integrator' */
-  real_T Filter_CSTATE;                /* '<S127>/Filter' */
-  real_T Integrator_CSTATE_e;          /* '<S78>/Integrator' */
-  real_T Filter_CSTATE_f;              /* '<S73>/Filter' */
   real_T TransferFcn_CSTATE[2];        /* '<S30>/Transfer Fcn' */
   real_T TransferFcn1_CSTATE;          /* '<S30>/Transfer Fcn1' */
   real_T Integrator1_CSTATE;           /* '<S30>/Integrator1' */
-  real_T wg_p1_CSTATE[2];              /* '<S176>/wg_p1' */
-  real_T wg_p2_CSTATE[2];              /* '<S176>/wg_p2' */
-  real_T vg_p1_CSTATE[2];              /* '<S175>/vg_p1' */
-  real_T vgw_p2_CSTATE[2];             /* '<S175>/vgw_p2' */
-  real_T ug_p_CSTATE[2];               /* '<S174>/ug_p' */
-  real_T rgw_p_CSTATE[2];              /* '<S173>/rgw_p' */
-  real_T qgw_p_CSTATE[2];              /* '<S172>/qgw_p' */
-  real_T pgw_p_CSTATE[2];              /* '<S171>/pgw_p' */
+  real_T wg_p1_CSTATE[2];              /* '<S74>/wg_p1' */
+  real_T wg_p2_CSTATE[2];              /* '<S74>/wg_p2' */
+  real_T vg_p1_CSTATE[2];              /* '<S73>/vg_p1' */
+  real_T vgw_p2_CSTATE[2];             /* '<S73>/vgw_p2' */
+  real_T ug_p_CSTATE[2];               /* '<S72>/ug_p' */
+  real_T rgw_p_CSTATE[2];              /* '<S71>/rgw_p' */
+  real_T qgw_p_CSTATE[2];              /* '<S70>/qgw_p' */
+  real_T pgw_p_CSTATE[2];              /* '<S69>/pgw_p' */
 };
 
 /* State disabled  */
 struct XDis_V4_FUZZY_T {
   boolean_T Integrator_CSTATE[12];     /* '<S30>/Integrator' */
-  boolean_T Integrator_CSTATE_d;       /* '<S132>/Integrator' */
-  boolean_T Filter_CSTATE;             /* '<S127>/Filter' */
-  boolean_T Integrator_CSTATE_e;       /* '<S78>/Integrator' */
-  boolean_T Filter_CSTATE_f;           /* '<S73>/Filter' */
   boolean_T TransferFcn_CSTATE[2];     /* '<S30>/Transfer Fcn' */
   boolean_T TransferFcn1_CSTATE;       /* '<S30>/Transfer Fcn1' */
   boolean_T Integrator1_CSTATE;        /* '<S30>/Integrator1' */
-  boolean_T wg_p1_CSTATE[2];           /* '<S176>/wg_p1' */
-  boolean_T wg_p2_CSTATE[2];           /* '<S176>/wg_p2' */
-  boolean_T vg_p1_CSTATE[2];           /* '<S175>/vg_p1' */
-  boolean_T vgw_p2_CSTATE[2];          /* '<S175>/vgw_p2' */
-  boolean_T ug_p_CSTATE[2];            /* '<S174>/ug_p' */
-  boolean_T rgw_p_CSTATE[2];           /* '<S173>/rgw_p' */
-  boolean_T qgw_p_CSTATE[2];           /* '<S172>/qgw_p' */
-  boolean_T pgw_p_CSTATE[2];           /* '<S171>/pgw_p' */
+  boolean_T wg_p1_CSTATE[2];           /* '<S74>/wg_p1' */
+  boolean_T wg_p2_CSTATE[2];           /* '<S74>/wg_p2' */
+  boolean_T vg_p1_CSTATE[2];           /* '<S73>/vg_p1' */
+  boolean_T vgw_p2_CSTATE[2];          /* '<S73>/vgw_p2' */
+  boolean_T ug_p_CSTATE[2];            /* '<S72>/ug_p' */
+  boolean_T rgw_p_CSTATE[2];           /* '<S71>/rgw_p' */
+  boolean_T qgw_p_CSTATE[2];           /* '<S70>/qgw_p' */
+  boolean_T pgw_p_CSTATE[2];           /* '<S69>/pgw_p' */
 };
 
 /* Zero-crossing (trigger) state */
@@ -496,28 +499,28 @@ struct PrevZCX_V4_FUZZY_T {
 
 /* Invariant block signals (default storage) */
 struct ConstB_V4_FUZZY_T {
-  real_T UnitConversion;               /* '<S159>/Unit Conversion' */
-  real_T UnitConversion_k;             /* '<S169>/Unit Conversion' */
-  real_T sigma_wg;                     /* '<S178>/sigma_wg ' */
-  real_T UnitConversion_n;             /* '<S163>/Unit Conversion' */
-  real_T UnitConversion_c;             /* '<S197>/Unit Conversion' */
+  real_T UnitConversion;               /* '<S57>/Unit Conversion' */
+  real_T UnitConversion_k;             /* '<S67>/Unit Conversion' */
+  real_T sigma_wg;                     /* '<S76>/sigma_wg ' */
+  real_T UnitConversion_n;             /* '<S61>/Unit Conversion' */
+  real_T UnitConversion_c;             /* '<S95>/Unit Conversion' */
   real_T PreLookUpIndexSearchprobofe;
-                        /* '<S177>/PreLook-Up Index Search  (prob of exceed)' */
+                         /* '<S75>/PreLook-Up Index Search  (prob of exceed)' */
   real_T constBlockForifHeightMaxlow;
   real_T constBlockForifHeightMaxl_e;
   real_T constBlockForifHeightMaxl_l;
   real_T constBlockForifHeightMax_eh;
-  real_T Sqrt[4];                      /* '<S170>/Sqrt' */
-  real_T Sqrt1;                        /* '<S170>/Sqrt1' */
-  real_T Divide[4];                    /* '<S170>/Divide' */
+  real_T Sqrt[4];                      /* '<S68>/Sqrt' */
+  real_T Sqrt1;                        /* '<S68>/Sqrt1' */
+  real_T Divide[4];                    /* '<S68>/Divide' */
   real_T motorspeed;                   /* '<S30>/Gain2' */
-  real_T Sum;                          /* '<S187>/Sum' */
-  real_T Sum_a;                        /* '<S179>/Sum' */
-  real_T sqrt_a;                       /* '<S176>/sqrt' */
-  real_T w4;                           /* '<S171>/w4' */
-  real_T u16;                          /* '<S171>/u^1//6' */
+  real_T Sum;                          /* '<S85>/Sum' */
+  real_T Sum_a;                        /* '<S77>/Sum' */
+  real_T sqrt_a;                       /* '<S74>/sqrt' */
+  real_T w4;                           /* '<S69>/w4' */
+  real_T u16;                          /* '<S69>/u^1//6' */
   uint32_T PreLookUpIndexSearchprobo_g;
-                        /* '<S177>/PreLook-Up Index Search  (prob of exceed)' */
+                         /* '<S75>/PreLook-Up Index Search  (prob of exceed)' */
 };
 
 #ifndef ODE4_INTG
@@ -546,7 +549,17 @@ struct ConstP_V4_FUZZY_T {
   /* Expression: fis.outputSamplePoints
    * Referenced by: '<S9>/Output Sample Points'
    */
+  real_T OutputSamplePoints_Value_ch[101];
+
+  /* Expression: fis.outputSamplePoints
+   * Referenced by: '<S10>/Output Sample Points'
+   */
   real_T OutputSamplePoints_Value_o[101];
+
+  /* Expression: fis.outputSamplePoints
+   * Referenced by: '<S11>/Output Sample Points'
+   */
+  real_T OutputSamplePoints_Value_o1[101];
 
   /* Pooled Parameter (Expression: x_nom)
    * Referenced by:
@@ -556,17 +569,17 @@ struct ConstP_V4_FUZZY_T {
   real_T pooled11[12];
 
   /* Expression: h_vec
-   * Referenced by: '<S177>/PreLook-Up Index Search  (altitude)'
+   * Referenced by: '<S75>/PreLook-Up Index Search  (altitude)'
    */
   real_T PreLookUpIndexSearchaltitude_Br[12];
 
   /* Expression: sigma_vec'
-   * Referenced by: '<S177>/Medium//High Altitude Intensity'
+   * Referenced by: '<S75>/Medium//High Altitude Intensity'
    */
   real_T MediumHighAltitudeIntensity_Tab[84];
 
   /* Computed Parameter: MediumHighAltitudeIntensity_max
-   * Referenced by: '<S177>/Medium//High Altitude Intensity'
+   * Referenced by: '<S75>/Medium//High Altitude Intensity'
    */
   uint32_T MediumHighAltitudeIntensity_max[2];
 };
@@ -583,8 +596,8 @@ struct tag_RTM_V4_FUZZY_T {
   boolean_T zCCacheNeedsReset;
   boolean_T derivCacheNeedsReset;
   boolean_T CTOutputIncnstWithState;
-  real_T odeY[36];
-  real_T odeF[4][36];
+  real_T odeY[32];
+  real_T odeF[4][32];
   ODE4_IntgData intgData;
 
   /*
@@ -676,13 +689,13 @@ class V4_FUZZY
   static void MATLABFunctionned_to_PoseStampe(B_MATLABFunctionned_to_PoseSt_T
     *localB);
 
-  /* private member function(s) for subsystem '<S155>/Enabled Subsystem'*/
+  /* private member function(s) for subsystem '<S53>/Enabled Subsystem'*/
   static void V4_FUZZY_EnabledSubsystem_Init(B_EnabledSubsystem_V4_FUZZY_T
     *localB);
   static void V4_FUZZY_EnabledSubsystem(boolean_T rtu_Enable, const
     SL_Bus_std_msgs_Bool *rtu_In1, B_EnabledSubsystem_V4_FUZZY_T *localB);
 
-  /* private member function(s) for subsystem '<S156>/Enabled Subsystem'*/
+  /* private member function(s) for subsystem '<S54>/Enabled Subsystem'*/
   static void V4_FUZZ_EnabledSubsystem_p_Init(B_EnabledSubsystem_V4_FUZZY_d_T
     *localB);
   static void V4_FUZZY_EnabledSubsystem_k(boolean_T rtu_Enable, const
@@ -735,19 +748,21 @@ extern volatile boolean_T runModel;
  * Block '<S7>/InputConversion' : Eliminate redundant data type conversion
  * Block '<S8>/InputConversion' : Eliminate redundant data type conversion
  * Block '<S9>/InputConversion' : Eliminate redundant data type conversion
+ * Block '<S10>/InputConversion' : Eliminate redundant data type conversion
+ * Block '<S11>/InputConversion' : Eliminate redundant data type conversion
  * Block '<Root>/Manual Switch' : Eliminated due to constant selection input
- * Block '<S152>/Cast' : Eliminate redundant data type conversion
- * Block '<S152>/Cast To Double' : Eliminate redundant data type conversion
- * Block '<S152>/Cast To Double1' : Eliminate redundant data type conversion
- * Block '<S152>/Cast To Double2' : Eliminate redundant data type conversion
- * Block '<S152>/Cast To Double3' : Eliminate redundant data type conversion
- * Block '<S152>/Cast To Double4' : Eliminate redundant data type conversion
- * Block '<S183>/Reshape' : Reshape block reduction
- * Block '<S183>/Reshape1' : Reshape block reduction
- * Block '<S185>/Reshape' : Reshape block reduction
- * Block '<S191>/Reshape' : Reshape block reduction
- * Block '<S191>/Reshape1' : Reshape block reduction
- * Block '<S193>/Reshape' : Reshape block reduction
+ * Block '<S50>/Cast' : Eliminate redundant data type conversion
+ * Block '<S50>/Cast To Double' : Eliminate redundant data type conversion
+ * Block '<S50>/Cast To Double1' : Eliminate redundant data type conversion
+ * Block '<S50>/Cast To Double2' : Eliminate redundant data type conversion
+ * Block '<S50>/Cast To Double3' : Eliminate redundant data type conversion
+ * Block '<S50>/Cast To Double4' : Eliminate redundant data type conversion
+ * Block '<S81>/Reshape' : Reshape block reduction
+ * Block '<S81>/Reshape1' : Reshape block reduction
+ * Block '<S83>/Reshape' : Reshape block reduction
+ * Block '<S89>/Reshape' : Reshape block reduction
+ * Block '<S89>/Reshape1' : Reshape block reduction
+ * Block '<S91>/Reshape' : Reshape block reduction
  * Block '<S29>/Clock' : Unused code path elimination
  * Block '<S29>/Constant' : Unused code path elimination
  * Block '<S29>/Constant1' : Unused code path elimination
@@ -781,22 +796,22 @@ extern volatile boolean_T runModel;
  * '<S6>'   : 'V4_FUZZY/Call Service'
  * '<S7>'   : 'V4_FUZZY/Fuzzy Logic  Controller - Aleron'
  * '<S8>'   : 'V4_FUZZY/Fuzzy Logic  Controller - Altura'
- * '<S9>'   : 'V4_FUZZY/Fuzzy Logic  Controller - Timon'
- * '<S10>'  : 'V4_FUZZY/MATLAB Function'
- * '<S11>'  : 'V4_FUZZY/MATLAB Function-IMU2'
- * '<S12>'  : 'V4_FUZZY/MATLAB Function-MODELO'
- * '<S13>'  : 'V4_FUZZY/MATLAB Function-Odometry'
- * '<S14>'  : 'V4_FUZZY/MATLAB Function-Odometry1'
- * '<S15>'  : 'V4_FUZZY/MATLAB Function-clocl'
- * '<S16>'  : 'V4_FUZZY/MATLAB Function-ned_to_PoseStaamped'
- * '<S17>'  : 'V4_FUZZY/MATLAB Function-ned_to_PoseStamped'
- * '<S18>'  : 'V4_FUZZY/MATLAB Function-ned_to_TwistStamped'
- * '<S19>'  : 'V4_FUZZY/MATLAB Function-ned_to_gazebo'
- * '<S20>'  : 'V4_FUZZY/MATLAB Function-ned_to_imu'
- * '<S21>'  : 'V4_FUZZY/MATLAB Function-ned_to_odometry'
- * '<S22>'  : 'V4_FUZZY/MATLAB Function2'
- * '<S23>'  : 'V4_FUZZY/PID ELEVATOR'
- * '<S24>'  : 'V4_FUZZY/PID VELOCIDAD'
+ * '<S9>'   : 'V4_FUZZY/Fuzzy Logic  Controller - Pitch'
+ * '<S10>'  : 'V4_FUZZY/Fuzzy Logic  Controller - Timon'
+ * '<S11>'  : 'V4_FUZZY/Fuzzy Logic  Controller - Velocidad'
+ * '<S12>'  : 'V4_FUZZY/MATLAB Function'
+ * '<S13>'  : 'V4_FUZZY/MATLAB Function-IMU2'
+ * '<S14>'  : 'V4_FUZZY/MATLAB Function-MODELO'
+ * '<S15>'  : 'V4_FUZZY/MATLAB Function-Odometry'
+ * '<S16>'  : 'V4_FUZZY/MATLAB Function-Odometry1'
+ * '<S17>'  : 'V4_FUZZY/MATLAB Function-clocl'
+ * '<S18>'  : 'V4_FUZZY/MATLAB Function-ned_to_PoseStaamped'
+ * '<S19>'  : 'V4_FUZZY/MATLAB Function-ned_to_PoseStamped'
+ * '<S20>'  : 'V4_FUZZY/MATLAB Function-ned_to_TwistStamped'
+ * '<S21>'  : 'V4_FUZZY/MATLAB Function-ned_to_gazebo'
+ * '<S22>'  : 'V4_FUZZY/MATLAB Function-ned_to_imu'
+ * '<S23>'  : 'V4_FUZZY/MATLAB Function-ned_to_odometry'
+ * '<S24>'  : 'V4_FUZZY/MATLAB Function2'
  * '<S25>'  : 'V4_FUZZY/Publish'
  * '<S26>'  : 'V4_FUZZY/Publish1'
  * '<S27>'  : 'V4_FUZZY/Publish2'
@@ -811,170 +826,68 @@ extern volatile boolean_T runModel;
  * '<S36>'  : 'V4_FUZZY/Fuzzy Logic  Controller - Altura/Defuzzify Outputs'
  * '<S37>'  : 'V4_FUZZY/Fuzzy Logic  Controller - Altura/Evaluate Rule Antecedents'
  * '<S38>'  : 'V4_FUZZY/Fuzzy Logic  Controller - Altura/Evaluate Rule Consequents'
- * '<S39>'  : 'V4_FUZZY/Fuzzy Logic  Controller - Timon/Defuzzify Outputs'
- * '<S40>'  : 'V4_FUZZY/Fuzzy Logic  Controller - Timon/Evaluate Rule Antecedents'
- * '<S41>'  : 'V4_FUZZY/Fuzzy Logic  Controller - Timon/Evaluate Rule Consequents'
- * '<S42>'  : 'V4_FUZZY/PID ELEVATOR/Anti-windup'
- * '<S43>'  : 'V4_FUZZY/PID ELEVATOR/D Gain'
- * '<S44>'  : 'V4_FUZZY/PID ELEVATOR/External Derivative'
- * '<S45>'  : 'V4_FUZZY/PID ELEVATOR/Filter'
- * '<S46>'  : 'V4_FUZZY/PID ELEVATOR/Filter ICs'
- * '<S47>'  : 'V4_FUZZY/PID ELEVATOR/I Gain'
- * '<S48>'  : 'V4_FUZZY/PID ELEVATOR/Ideal P Gain'
- * '<S49>'  : 'V4_FUZZY/PID ELEVATOR/Ideal P Gain Fdbk'
- * '<S50>'  : 'V4_FUZZY/PID ELEVATOR/Integrator'
- * '<S51>'  : 'V4_FUZZY/PID ELEVATOR/Integrator ICs'
- * '<S52>'  : 'V4_FUZZY/PID ELEVATOR/N Copy'
- * '<S53>'  : 'V4_FUZZY/PID ELEVATOR/N Gain'
- * '<S54>'  : 'V4_FUZZY/PID ELEVATOR/P Copy'
- * '<S55>'  : 'V4_FUZZY/PID ELEVATOR/Parallel P Gain'
- * '<S56>'  : 'V4_FUZZY/PID ELEVATOR/Reset Signal'
- * '<S57>'  : 'V4_FUZZY/PID ELEVATOR/Saturation'
- * '<S58>'  : 'V4_FUZZY/PID ELEVATOR/Saturation Fdbk'
- * '<S59>'  : 'V4_FUZZY/PID ELEVATOR/Sum'
- * '<S60>'  : 'V4_FUZZY/PID ELEVATOR/Sum Fdbk'
- * '<S61>'  : 'V4_FUZZY/PID ELEVATOR/Tracking Mode'
- * '<S62>'  : 'V4_FUZZY/PID ELEVATOR/Tracking Mode Sum'
- * '<S63>'  : 'V4_FUZZY/PID ELEVATOR/Tsamp - Integral'
- * '<S64>'  : 'V4_FUZZY/PID ELEVATOR/Tsamp - Ngain'
- * '<S65>'  : 'V4_FUZZY/PID ELEVATOR/postSat Signal'
- * '<S66>'  : 'V4_FUZZY/PID ELEVATOR/preInt Signal'
- * '<S67>'  : 'V4_FUZZY/PID ELEVATOR/preSat Signal'
- * '<S68>'  : 'V4_FUZZY/PID ELEVATOR/Anti-windup/Cont. Clamping Parallel'
- * '<S69>'  : 'V4_FUZZY/PID ELEVATOR/Anti-windup/Cont. Clamping Parallel/Dead Zone'
- * '<S70>'  : 'V4_FUZZY/PID ELEVATOR/Anti-windup/Cont. Clamping Parallel/Dead Zone/Enabled'
- * '<S71>'  : 'V4_FUZZY/PID ELEVATOR/D Gain/Internal Parameters'
- * '<S72>'  : 'V4_FUZZY/PID ELEVATOR/External Derivative/Error'
- * '<S73>'  : 'V4_FUZZY/PID ELEVATOR/Filter/Cont. Filter'
- * '<S74>'  : 'V4_FUZZY/PID ELEVATOR/Filter ICs/Internal IC - Filter'
- * '<S75>'  : 'V4_FUZZY/PID ELEVATOR/I Gain/Internal Parameters'
- * '<S76>'  : 'V4_FUZZY/PID ELEVATOR/Ideal P Gain/Passthrough'
- * '<S77>'  : 'V4_FUZZY/PID ELEVATOR/Ideal P Gain Fdbk/Disabled'
- * '<S78>'  : 'V4_FUZZY/PID ELEVATOR/Integrator/Continuous'
- * '<S79>'  : 'V4_FUZZY/PID ELEVATOR/Integrator ICs/Internal IC'
- * '<S80>'  : 'V4_FUZZY/PID ELEVATOR/N Copy/Disabled'
- * '<S81>'  : 'V4_FUZZY/PID ELEVATOR/N Gain/Internal Parameters'
- * '<S82>'  : 'V4_FUZZY/PID ELEVATOR/P Copy/Disabled'
- * '<S83>'  : 'V4_FUZZY/PID ELEVATOR/Parallel P Gain/Internal Parameters'
- * '<S84>'  : 'V4_FUZZY/PID ELEVATOR/Reset Signal/Disabled'
- * '<S85>'  : 'V4_FUZZY/PID ELEVATOR/Saturation/Enabled'
- * '<S86>'  : 'V4_FUZZY/PID ELEVATOR/Saturation Fdbk/Disabled'
- * '<S87>'  : 'V4_FUZZY/PID ELEVATOR/Sum/Sum_PID'
- * '<S88>'  : 'V4_FUZZY/PID ELEVATOR/Sum Fdbk/Disabled'
- * '<S89>'  : 'V4_FUZZY/PID ELEVATOR/Tracking Mode/Disabled'
- * '<S90>'  : 'V4_FUZZY/PID ELEVATOR/Tracking Mode Sum/Passthrough'
- * '<S91>'  : 'V4_FUZZY/PID ELEVATOR/Tsamp - Integral/TsSignalSpecification'
- * '<S92>'  : 'V4_FUZZY/PID ELEVATOR/Tsamp - Ngain/Passthrough'
- * '<S93>'  : 'V4_FUZZY/PID ELEVATOR/postSat Signal/Forward_Path'
- * '<S94>'  : 'V4_FUZZY/PID ELEVATOR/preInt Signal/Internal PreInt'
- * '<S95>'  : 'V4_FUZZY/PID ELEVATOR/preSat Signal/Forward_Path'
- * '<S96>'  : 'V4_FUZZY/PID VELOCIDAD/Anti-windup'
- * '<S97>'  : 'V4_FUZZY/PID VELOCIDAD/D Gain'
- * '<S98>'  : 'V4_FUZZY/PID VELOCIDAD/External Derivative'
- * '<S99>'  : 'V4_FUZZY/PID VELOCIDAD/Filter'
- * '<S100>' : 'V4_FUZZY/PID VELOCIDAD/Filter ICs'
- * '<S101>' : 'V4_FUZZY/PID VELOCIDAD/I Gain'
- * '<S102>' : 'V4_FUZZY/PID VELOCIDAD/Ideal P Gain'
- * '<S103>' : 'V4_FUZZY/PID VELOCIDAD/Ideal P Gain Fdbk'
- * '<S104>' : 'V4_FUZZY/PID VELOCIDAD/Integrator'
- * '<S105>' : 'V4_FUZZY/PID VELOCIDAD/Integrator ICs'
- * '<S106>' : 'V4_FUZZY/PID VELOCIDAD/N Copy'
- * '<S107>' : 'V4_FUZZY/PID VELOCIDAD/N Gain'
- * '<S108>' : 'V4_FUZZY/PID VELOCIDAD/P Copy'
- * '<S109>' : 'V4_FUZZY/PID VELOCIDAD/Parallel P Gain'
- * '<S110>' : 'V4_FUZZY/PID VELOCIDAD/Reset Signal'
- * '<S111>' : 'V4_FUZZY/PID VELOCIDAD/Saturation'
- * '<S112>' : 'V4_FUZZY/PID VELOCIDAD/Saturation Fdbk'
- * '<S113>' : 'V4_FUZZY/PID VELOCIDAD/Sum'
- * '<S114>' : 'V4_FUZZY/PID VELOCIDAD/Sum Fdbk'
- * '<S115>' : 'V4_FUZZY/PID VELOCIDAD/Tracking Mode'
- * '<S116>' : 'V4_FUZZY/PID VELOCIDAD/Tracking Mode Sum'
- * '<S117>' : 'V4_FUZZY/PID VELOCIDAD/Tsamp - Integral'
- * '<S118>' : 'V4_FUZZY/PID VELOCIDAD/Tsamp - Ngain'
- * '<S119>' : 'V4_FUZZY/PID VELOCIDAD/postSat Signal'
- * '<S120>' : 'V4_FUZZY/PID VELOCIDAD/preInt Signal'
- * '<S121>' : 'V4_FUZZY/PID VELOCIDAD/preSat Signal'
- * '<S122>' : 'V4_FUZZY/PID VELOCIDAD/Anti-windup/Cont. Clamping Parallel'
- * '<S123>' : 'V4_FUZZY/PID VELOCIDAD/Anti-windup/Cont. Clamping Parallel/Dead Zone'
- * '<S124>' : 'V4_FUZZY/PID VELOCIDAD/Anti-windup/Cont. Clamping Parallel/Dead Zone/Enabled'
- * '<S125>' : 'V4_FUZZY/PID VELOCIDAD/D Gain/Internal Parameters'
- * '<S126>' : 'V4_FUZZY/PID VELOCIDAD/External Derivative/Error'
- * '<S127>' : 'V4_FUZZY/PID VELOCIDAD/Filter/Cont. Filter'
- * '<S128>' : 'V4_FUZZY/PID VELOCIDAD/Filter ICs/Internal IC - Filter'
- * '<S129>' : 'V4_FUZZY/PID VELOCIDAD/I Gain/Internal Parameters'
- * '<S130>' : 'V4_FUZZY/PID VELOCIDAD/Ideal P Gain/Passthrough'
- * '<S131>' : 'V4_FUZZY/PID VELOCIDAD/Ideal P Gain Fdbk/Disabled'
- * '<S132>' : 'V4_FUZZY/PID VELOCIDAD/Integrator/Continuous'
- * '<S133>' : 'V4_FUZZY/PID VELOCIDAD/Integrator ICs/Internal IC'
- * '<S134>' : 'V4_FUZZY/PID VELOCIDAD/N Copy/Disabled'
- * '<S135>' : 'V4_FUZZY/PID VELOCIDAD/N Gain/Internal Parameters'
- * '<S136>' : 'V4_FUZZY/PID VELOCIDAD/P Copy/Disabled'
- * '<S137>' : 'V4_FUZZY/PID VELOCIDAD/Parallel P Gain/Internal Parameters'
- * '<S138>' : 'V4_FUZZY/PID VELOCIDAD/Reset Signal/Disabled'
- * '<S139>' : 'V4_FUZZY/PID VELOCIDAD/Saturation/Enabled'
- * '<S140>' : 'V4_FUZZY/PID VELOCIDAD/Saturation Fdbk/Disabled'
- * '<S141>' : 'V4_FUZZY/PID VELOCIDAD/Sum/Sum_PID'
- * '<S142>' : 'V4_FUZZY/PID VELOCIDAD/Sum Fdbk/Disabled'
- * '<S143>' : 'V4_FUZZY/PID VELOCIDAD/Tracking Mode/Disabled'
- * '<S144>' : 'V4_FUZZY/PID VELOCIDAD/Tracking Mode Sum/Passthrough'
- * '<S145>' : 'V4_FUZZY/PID VELOCIDAD/Tsamp - Integral/TsSignalSpecification'
- * '<S146>' : 'V4_FUZZY/PID VELOCIDAD/Tsamp - Ngain/Passthrough'
- * '<S147>' : 'V4_FUZZY/PID VELOCIDAD/postSat Signal/Forward_Path'
- * '<S148>' : 'V4_FUZZY/PID VELOCIDAD/preInt Signal/Internal PreInt'
- * '<S149>' : 'V4_FUZZY/PID VELOCIDAD/preSat Signal/Forward_Path'
- * '<S150>' : 'V4_FUZZY/SUBSYSTEM_MODEL/Band-Limited White Noise'
- * '<S151>' : 'V4_FUZZY/SUBSYSTEM_MODEL/Compare To Constant'
- * '<S152>' : 'V4_FUZZY/SUBSYSTEM_MODEL/Dryden Wind Turbulence Model  (Continuous (-q +r))'
- * '<S153>' : 'V4_FUZZY/SUBSYSTEM_MODEL/MATLAB Function - MODEL'
- * '<S154>' : 'V4_FUZZY/SUBSYSTEM_MODEL/MATLAB Function-reset'
- * '<S155>' : 'V4_FUZZY/SUBSYSTEM_MODEL/Subscribe1_TURBULENCIA1'
- * '<S156>' : 'V4_FUZZY/SUBSYSTEM_MODEL/Subscribe_HEAVE'
- * '<S157>' : 'V4_FUZZY/SUBSYSTEM_MODEL/Subscribe_RATE'
- * '<S158>' : 'V4_FUZZY/SUBSYSTEM_MODEL/Subscribe_TURBULENCIA'
- * '<S159>' : 'V4_FUZZY/SUBSYSTEM_MODEL/Dryden Wind Turbulence Model  (Continuous (-q +r))/Angle Conversion'
- * '<S160>' : 'V4_FUZZY/SUBSYSTEM_MODEL/Dryden Wind Turbulence Model  (Continuous (-q +r))/Filters on angular rates'
- * '<S161>' : 'V4_FUZZY/SUBSYSTEM_MODEL/Dryden Wind Turbulence Model  (Continuous (-q +r))/Filters on velocities'
- * '<S162>' : 'V4_FUZZY/SUBSYSTEM_MODEL/Dryden Wind Turbulence Model  (Continuous (-q +r))/Length Conversion'
- * '<S163>' : 'V4_FUZZY/SUBSYSTEM_MODEL/Dryden Wind Turbulence Model  (Continuous (-q +r))/Length Conversion1'
- * '<S164>' : 'V4_FUZZY/SUBSYSTEM_MODEL/Dryden Wind Turbulence Model  (Continuous (-q +r))/RMS turbulence  intensities'
- * '<S165>' : 'V4_FUZZY/SUBSYSTEM_MODEL/Dryden Wind Turbulence Model  (Continuous (-q +r))/Select angular rates'
- * '<S166>' : 'V4_FUZZY/SUBSYSTEM_MODEL/Dryden Wind Turbulence Model  (Continuous (-q +r))/Select velocities'
- * '<S167>' : 'V4_FUZZY/SUBSYSTEM_MODEL/Dryden Wind Turbulence Model  (Continuous (-q +r))/Turbulence scale lengths'
- * '<S168>' : 'V4_FUZZY/SUBSYSTEM_MODEL/Dryden Wind Turbulence Model  (Continuous (-q +r))/Velocity Conversion'
- * '<S169>' : 'V4_FUZZY/SUBSYSTEM_MODEL/Dryden Wind Turbulence Model  (Continuous (-q +r))/Velocity Conversion2'
- * '<S170>' : 'V4_FUZZY/SUBSYSTEM_MODEL/Dryden Wind Turbulence Model  (Continuous (-q +r))/White Noise'
- * '<S171>' : 'V4_FUZZY/SUBSYSTEM_MODEL/Dryden Wind Turbulence Model  (Continuous (-q +r))/Filters on angular rates/Hpgw'
- * '<S172>' : 'V4_FUZZY/SUBSYSTEM_MODEL/Dryden Wind Turbulence Model  (Continuous (-q +r))/Filters on angular rates/Hqgw'
- * '<S173>' : 'V4_FUZZY/SUBSYSTEM_MODEL/Dryden Wind Turbulence Model  (Continuous (-q +r))/Filters on angular rates/Hrgw'
- * '<S174>' : 'V4_FUZZY/SUBSYSTEM_MODEL/Dryden Wind Turbulence Model  (Continuous (-q +r))/Filters on velocities/Hugw(s)'
- * '<S175>' : 'V4_FUZZY/SUBSYSTEM_MODEL/Dryden Wind Turbulence Model  (Continuous (-q +r))/Filters on velocities/Hvgw(s)'
- * '<S176>' : 'V4_FUZZY/SUBSYSTEM_MODEL/Dryden Wind Turbulence Model  (Continuous (-q +r))/Filters on velocities/Hwgw(s)'
- * '<S177>' : 'V4_FUZZY/SUBSYSTEM_MODEL/Dryden Wind Turbulence Model  (Continuous (-q +r))/RMS turbulence  intensities/High Altitude Intensity'
- * '<S178>' : 'V4_FUZZY/SUBSYSTEM_MODEL/Dryden Wind Turbulence Model  (Continuous (-q +r))/RMS turbulence  intensities/Low Altitude Intensity'
- * '<S179>' : 'V4_FUZZY/SUBSYSTEM_MODEL/Dryden Wind Turbulence Model  (Continuous (-q +r))/Select angular rates/Interpolate  rates'
- * '<S180>' : 'V4_FUZZY/SUBSYSTEM_MODEL/Dryden Wind Turbulence Model  (Continuous (-q +r))/Select angular rates/Low altitude  rates'
- * '<S181>' : 'V4_FUZZY/SUBSYSTEM_MODEL/Dryden Wind Turbulence Model  (Continuous (-q +r))/Select angular rates/Medium//High  altitude rates'
- * '<S182>' : 'V4_FUZZY/SUBSYSTEM_MODEL/Dryden Wind Turbulence Model  (Continuous (-q +r))/Select angular rates/Merge Subsystems'
- * '<S183>' : 'V4_FUZZY/SUBSYSTEM_MODEL/Dryden Wind Turbulence Model  (Continuous (-q +r))/Select angular rates/Interpolate  rates/wind to body transformation'
- * '<S184>' : 'V4_FUZZY/SUBSYSTEM_MODEL/Dryden Wind Turbulence Model  (Continuous (-q +r))/Select angular rates/Interpolate  rates/wind to body transformation/convert to earth coords'
- * '<S185>' : 'V4_FUZZY/SUBSYSTEM_MODEL/Dryden Wind Turbulence Model  (Continuous (-q +r))/Select angular rates/Low altitude  rates/wind to body transformation'
- * '<S186>' : 'V4_FUZZY/SUBSYSTEM_MODEL/Dryden Wind Turbulence Model  (Continuous (-q +r))/Select angular rates/Low altitude  rates/wind to body transformation/convert to earth coords'
- * '<S187>' : 'V4_FUZZY/SUBSYSTEM_MODEL/Dryden Wind Turbulence Model  (Continuous (-q +r))/Select velocities/Interpolate  velocities'
- * '<S188>' : 'V4_FUZZY/SUBSYSTEM_MODEL/Dryden Wind Turbulence Model  (Continuous (-q +r))/Select velocities/Low altitude  velocities'
- * '<S189>' : 'V4_FUZZY/SUBSYSTEM_MODEL/Dryden Wind Turbulence Model  (Continuous (-q +r))/Select velocities/Medium//High  altitude velocities'
- * '<S190>' : 'V4_FUZZY/SUBSYSTEM_MODEL/Dryden Wind Turbulence Model  (Continuous (-q +r))/Select velocities/Merge Subsystems'
- * '<S191>' : 'V4_FUZZY/SUBSYSTEM_MODEL/Dryden Wind Turbulence Model  (Continuous (-q +r))/Select velocities/Interpolate  velocities/wind to body transformation'
- * '<S192>' : 'V4_FUZZY/SUBSYSTEM_MODEL/Dryden Wind Turbulence Model  (Continuous (-q +r))/Select velocities/Interpolate  velocities/wind to body transformation/convert to earth coords'
- * '<S193>' : 'V4_FUZZY/SUBSYSTEM_MODEL/Dryden Wind Turbulence Model  (Continuous (-q +r))/Select velocities/Low altitude  velocities/wind to body transformation'
- * '<S194>' : 'V4_FUZZY/SUBSYSTEM_MODEL/Dryden Wind Turbulence Model  (Continuous (-q +r))/Select velocities/Low altitude  velocities/wind to body transformation/convert to earth coords'
- * '<S195>' : 'V4_FUZZY/SUBSYSTEM_MODEL/Dryden Wind Turbulence Model  (Continuous (-q +r))/Turbulence scale lengths/Low altitude scale length'
- * '<S196>' : 'V4_FUZZY/SUBSYSTEM_MODEL/Dryden Wind Turbulence Model  (Continuous (-q +r))/Turbulence scale lengths/Medium//High altitude scale length'
- * '<S197>' : 'V4_FUZZY/SUBSYSTEM_MODEL/Dryden Wind Turbulence Model  (Continuous (-q +r))/Turbulence scale lengths/Medium//High altitude scale length/Length Conversion'
- * '<S198>' : 'V4_FUZZY/SUBSYSTEM_MODEL/Subscribe1_TURBULENCIA1/Enabled Subsystem'
- * '<S199>' : 'V4_FUZZY/SUBSYSTEM_MODEL/Subscribe_HEAVE/Enabled Subsystem'
- * '<S200>' : 'V4_FUZZY/SUBSYSTEM_MODEL/Subscribe_RATE/Enabled Subsystem'
- * '<S201>' : 'V4_FUZZY/SUBSYSTEM_MODEL/Subscribe_TURBULENCIA/Enabled Subsystem'
- * '<S202>' : 'V4_FUZZY/Subscribe-ALTURA/Enabled Subsystem'
- * '<S203>' : 'V4_FUZZY/Subscribe-YAW/Enabled Subsystem'
+ * '<S39>'  : 'V4_FUZZY/Fuzzy Logic  Controller - Pitch/Defuzzify Outputs'
+ * '<S40>'  : 'V4_FUZZY/Fuzzy Logic  Controller - Pitch/Evaluate Rule Antecedents'
+ * '<S41>'  : 'V4_FUZZY/Fuzzy Logic  Controller - Pitch/Evaluate Rule Consequents'
+ * '<S42>'  : 'V4_FUZZY/Fuzzy Logic  Controller - Timon/Defuzzify Outputs'
+ * '<S43>'  : 'V4_FUZZY/Fuzzy Logic  Controller - Timon/Evaluate Rule Antecedents'
+ * '<S44>'  : 'V4_FUZZY/Fuzzy Logic  Controller - Timon/Evaluate Rule Consequents'
+ * '<S45>'  : 'V4_FUZZY/Fuzzy Logic  Controller - Velocidad/Defuzzify Outputs'
+ * '<S46>'  : 'V4_FUZZY/Fuzzy Logic  Controller - Velocidad/Evaluate Rule Antecedents'
+ * '<S47>'  : 'V4_FUZZY/Fuzzy Logic  Controller - Velocidad/Evaluate Rule Consequents'
+ * '<S48>'  : 'V4_FUZZY/SUBSYSTEM_MODEL/Band-Limited White Noise'
+ * '<S49>'  : 'V4_FUZZY/SUBSYSTEM_MODEL/Compare To Constant'
+ * '<S50>'  : 'V4_FUZZY/SUBSYSTEM_MODEL/Dryden Wind Turbulence Model  (Continuous (-q +r))'
+ * '<S51>'  : 'V4_FUZZY/SUBSYSTEM_MODEL/MATLAB Function - MODEL'
+ * '<S52>'  : 'V4_FUZZY/SUBSYSTEM_MODEL/MATLAB Function-reset'
+ * '<S53>'  : 'V4_FUZZY/SUBSYSTEM_MODEL/Subscribe1_TURBULENCIA1'
+ * '<S54>'  : 'V4_FUZZY/SUBSYSTEM_MODEL/Subscribe_HEAVE'
+ * '<S55>'  : 'V4_FUZZY/SUBSYSTEM_MODEL/Subscribe_RATE'
+ * '<S56>'  : 'V4_FUZZY/SUBSYSTEM_MODEL/Subscribe_TURBULENCIA'
+ * '<S57>'  : 'V4_FUZZY/SUBSYSTEM_MODEL/Dryden Wind Turbulence Model  (Continuous (-q +r))/Angle Conversion'
+ * '<S58>'  : 'V4_FUZZY/SUBSYSTEM_MODEL/Dryden Wind Turbulence Model  (Continuous (-q +r))/Filters on angular rates'
+ * '<S59>'  : 'V4_FUZZY/SUBSYSTEM_MODEL/Dryden Wind Turbulence Model  (Continuous (-q +r))/Filters on velocities'
+ * '<S60>'  : 'V4_FUZZY/SUBSYSTEM_MODEL/Dryden Wind Turbulence Model  (Continuous (-q +r))/Length Conversion'
+ * '<S61>'  : 'V4_FUZZY/SUBSYSTEM_MODEL/Dryden Wind Turbulence Model  (Continuous (-q +r))/Length Conversion1'
+ * '<S62>'  : 'V4_FUZZY/SUBSYSTEM_MODEL/Dryden Wind Turbulence Model  (Continuous (-q +r))/RMS turbulence  intensities'
+ * '<S63>'  : 'V4_FUZZY/SUBSYSTEM_MODEL/Dryden Wind Turbulence Model  (Continuous (-q +r))/Select angular rates'
+ * '<S64>'  : 'V4_FUZZY/SUBSYSTEM_MODEL/Dryden Wind Turbulence Model  (Continuous (-q +r))/Select velocities'
+ * '<S65>'  : 'V4_FUZZY/SUBSYSTEM_MODEL/Dryden Wind Turbulence Model  (Continuous (-q +r))/Turbulence scale lengths'
+ * '<S66>'  : 'V4_FUZZY/SUBSYSTEM_MODEL/Dryden Wind Turbulence Model  (Continuous (-q +r))/Velocity Conversion'
+ * '<S67>'  : 'V4_FUZZY/SUBSYSTEM_MODEL/Dryden Wind Turbulence Model  (Continuous (-q +r))/Velocity Conversion2'
+ * '<S68>'  : 'V4_FUZZY/SUBSYSTEM_MODEL/Dryden Wind Turbulence Model  (Continuous (-q +r))/White Noise'
+ * '<S69>'  : 'V4_FUZZY/SUBSYSTEM_MODEL/Dryden Wind Turbulence Model  (Continuous (-q +r))/Filters on angular rates/Hpgw'
+ * '<S70>'  : 'V4_FUZZY/SUBSYSTEM_MODEL/Dryden Wind Turbulence Model  (Continuous (-q +r))/Filters on angular rates/Hqgw'
+ * '<S71>'  : 'V4_FUZZY/SUBSYSTEM_MODEL/Dryden Wind Turbulence Model  (Continuous (-q +r))/Filters on angular rates/Hrgw'
+ * '<S72>'  : 'V4_FUZZY/SUBSYSTEM_MODEL/Dryden Wind Turbulence Model  (Continuous (-q +r))/Filters on velocities/Hugw(s)'
+ * '<S73>'  : 'V4_FUZZY/SUBSYSTEM_MODEL/Dryden Wind Turbulence Model  (Continuous (-q +r))/Filters on velocities/Hvgw(s)'
+ * '<S74>'  : 'V4_FUZZY/SUBSYSTEM_MODEL/Dryden Wind Turbulence Model  (Continuous (-q +r))/Filters on velocities/Hwgw(s)'
+ * '<S75>'  : 'V4_FUZZY/SUBSYSTEM_MODEL/Dryden Wind Turbulence Model  (Continuous (-q +r))/RMS turbulence  intensities/High Altitude Intensity'
+ * '<S76>'  : 'V4_FUZZY/SUBSYSTEM_MODEL/Dryden Wind Turbulence Model  (Continuous (-q +r))/RMS turbulence  intensities/Low Altitude Intensity'
+ * '<S77>'  : 'V4_FUZZY/SUBSYSTEM_MODEL/Dryden Wind Turbulence Model  (Continuous (-q +r))/Select angular rates/Interpolate  rates'
+ * '<S78>'  : 'V4_FUZZY/SUBSYSTEM_MODEL/Dryden Wind Turbulence Model  (Continuous (-q +r))/Select angular rates/Low altitude  rates'
+ * '<S79>'  : 'V4_FUZZY/SUBSYSTEM_MODEL/Dryden Wind Turbulence Model  (Continuous (-q +r))/Select angular rates/Medium//High  altitude rates'
+ * '<S80>'  : 'V4_FUZZY/SUBSYSTEM_MODEL/Dryden Wind Turbulence Model  (Continuous (-q +r))/Select angular rates/Merge Subsystems'
+ * '<S81>'  : 'V4_FUZZY/SUBSYSTEM_MODEL/Dryden Wind Turbulence Model  (Continuous (-q +r))/Select angular rates/Interpolate  rates/wind to body transformation'
+ * '<S82>'  : 'V4_FUZZY/SUBSYSTEM_MODEL/Dryden Wind Turbulence Model  (Continuous (-q +r))/Select angular rates/Interpolate  rates/wind to body transformation/convert to earth coords'
+ * '<S83>'  : 'V4_FUZZY/SUBSYSTEM_MODEL/Dryden Wind Turbulence Model  (Continuous (-q +r))/Select angular rates/Low altitude  rates/wind to body transformation'
+ * '<S84>'  : 'V4_FUZZY/SUBSYSTEM_MODEL/Dryden Wind Turbulence Model  (Continuous (-q +r))/Select angular rates/Low altitude  rates/wind to body transformation/convert to earth coords'
+ * '<S85>'  : 'V4_FUZZY/SUBSYSTEM_MODEL/Dryden Wind Turbulence Model  (Continuous (-q +r))/Select velocities/Interpolate  velocities'
+ * '<S86>'  : 'V4_FUZZY/SUBSYSTEM_MODEL/Dryden Wind Turbulence Model  (Continuous (-q +r))/Select velocities/Low altitude  velocities'
+ * '<S87>'  : 'V4_FUZZY/SUBSYSTEM_MODEL/Dryden Wind Turbulence Model  (Continuous (-q +r))/Select velocities/Medium//High  altitude velocities'
+ * '<S88>'  : 'V4_FUZZY/SUBSYSTEM_MODEL/Dryden Wind Turbulence Model  (Continuous (-q +r))/Select velocities/Merge Subsystems'
+ * '<S89>'  : 'V4_FUZZY/SUBSYSTEM_MODEL/Dryden Wind Turbulence Model  (Continuous (-q +r))/Select velocities/Interpolate  velocities/wind to body transformation'
+ * '<S90>'  : 'V4_FUZZY/SUBSYSTEM_MODEL/Dryden Wind Turbulence Model  (Continuous (-q +r))/Select velocities/Interpolate  velocities/wind to body transformation/convert to earth coords'
+ * '<S91>'  : 'V4_FUZZY/SUBSYSTEM_MODEL/Dryden Wind Turbulence Model  (Continuous (-q +r))/Select velocities/Low altitude  velocities/wind to body transformation'
+ * '<S92>'  : 'V4_FUZZY/SUBSYSTEM_MODEL/Dryden Wind Turbulence Model  (Continuous (-q +r))/Select velocities/Low altitude  velocities/wind to body transformation/convert to earth coords'
+ * '<S93>'  : 'V4_FUZZY/SUBSYSTEM_MODEL/Dryden Wind Turbulence Model  (Continuous (-q +r))/Turbulence scale lengths/Low altitude scale length'
+ * '<S94>'  : 'V4_FUZZY/SUBSYSTEM_MODEL/Dryden Wind Turbulence Model  (Continuous (-q +r))/Turbulence scale lengths/Medium//High altitude scale length'
+ * '<S95>'  : 'V4_FUZZY/SUBSYSTEM_MODEL/Dryden Wind Turbulence Model  (Continuous (-q +r))/Turbulence scale lengths/Medium//High altitude scale length/Length Conversion'
+ * '<S96>'  : 'V4_FUZZY/SUBSYSTEM_MODEL/Subscribe1_TURBULENCIA1/Enabled Subsystem'
+ * '<S97>'  : 'V4_FUZZY/SUBSYSTEM_MODEL/Subscribe_HEAVE/Enabled Subsystem'
+ * '<S98>'  : 'V4_FUZZY/SUBSYSTEM_MODEL/Subscribe_RATE/Enabled Subsystem'
+ * '<S99>'  : 'V4_FUZZY/SUBSYSTEM_MODEL/Subscribe_TURBULENCIA/Enabled Subsystem'
+ * '<S100>' : 'V4_FUZZY/Subscribe-ALTURA/Enabled Subsystem'
+ * '<S101>' : 'V4_FUZZY/Subscribe-YAW/Enabled Subsystem'
  */
 #endif                                 /* V4_FUZZY_H_ */

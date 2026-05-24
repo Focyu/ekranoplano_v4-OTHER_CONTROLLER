@@ -25,19 +25,19 @@ MF5='PL':'trimf',[ 0.20  0.35  0.35]
 Name='derror'
 Range=[-1.0 1.0]
 NumMFs=3
-MF1='N':'trimf',[-1.0 -1.0 0]
-MF2='Z':'trimf',[-0.3  0   0.3]
-MF3='P':'trimf',[ 0    1.0 1.0]
+MF1='N':'trimf',[-1.0 -1.0 -0.08]
+MF2='Z':'trimf',[-0.15  0   0.15]
+MF3='P':'trimf',[ 0.08  1.0  1.0]
 
 [Output1]
 Name='delta_e'
-Range=[-0.35 0.35]
+Range=[-0.20 0.20]
 NumMFs=5
-MF1='NL':'trimf',[-0.35 -0.35 -0.14]
-MF2='N':'trimf',[-0.21 -0.1 0]
-MF3='Z':'trimf',[-0.07 0 0.07]
-MF4='P':'trimf',[0 0.1 0.21]
-MF5='PL':'trimf',[0.14 0.35 0.35]
+MF1='NL':'trimf',[-0.20 -0.20 -0.08]
+MF2='N':'trimf', [-0.12 -0.05  0.0 ]
+MF3='Z':'trimf', [-0.04  0.0   0.04]
+MF4='P':'trimf', [ 0.0   0.05  0.12]
+MF5='PL':'trimf',[ 0.08  0.20  0.20]
 
 [Rules]
 1 1, 1 (1) : 1
