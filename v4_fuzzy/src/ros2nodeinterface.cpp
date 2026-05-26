@@ -4,9 +4,9 @@
 //
 // Code generated for Simulink model 'V4_FUZZY'.
 //
-// Model version                  : 13.4
+// Model version                  : 13.6
 // Simulink Coder version         : 26.1 (R2026a) 20-Nov-2025
-// C/C++ source code generated on : Sun May 24 10:28:34 2026
+// C/C++ source code generated on : Tue May 26 13:17:19 2026
 //
 #ifdef _MSC_VER
 #pragma warning(push)

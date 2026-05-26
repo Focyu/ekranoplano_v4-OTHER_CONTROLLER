@@ -4,7 +4,7 @@
  * Code generation for Simulink model "V4_FUZZY".
  *
  * Simulink Coder version                : 26.1 (R2026a) 20-Nov-2025
- * C++ source code generated on : Sun May 24 10:28:20 2026
+ * C++ source code generated on : Tue May 26 13:17:03 2026
  *
  * Note that the generated code is not dependent on this header file.
  * The file is used in cojuction with the automatic build procedure.

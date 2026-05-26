@@ -6,9 +6,9 @@
  *
  * Code generation for model "V4_FUZZY".
  *
- * Model version              : 13.4
+ * Model version              : 13.6
  * Simulink Coder version : 26.1 (R2026a) 20-Nov-2025
- * C++ source code generated on : Sun May 24 10:28:20 2026
+ * C++ source code generated on : Tue May 26 13:17:03 2026
  *
  * Target selection: ert.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping

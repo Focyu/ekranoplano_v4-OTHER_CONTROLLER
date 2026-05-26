@@ -6,9 +6,9 @@
  *
  * Code generation for model "V4_FUZZY".
  *
- * Model version              : 13.4
+ * Model version              : 13.6
  * Simulink Coder version : 26.1 (R2026a) 20-Nov-2025
- * C++ source code generated on : Sun May 24 10:28:20 2026
+ * C++ source code generated on : Tue May 26 13:17:03 2026
  *
  * Target selection: ert.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -243,14 +243,13 @@ struct B_V4_FUZZY_T {
   real_T dv6[2];
   real_T GainZ;                        /* '<Root>/Gain-Z' */
   real_T Sum3;                         /* '<Root>/Sum3' */
-  real_T Switch3;                      /* '<Root>/Switch3' */
+  real_T Gain1;                        /* '<Root>/Gain1' */
+  real_T Sum2;                         /* '<Root>/Sum2' */
   real_T RateLimiter2;                 /* '<Root>/Rate Limiter2' */
   real_T Sum5;                         /* '<Root>/Sum5' */
   real_T Saturation_roll_sp;           /* '<Root>/Saturation_roll_sp' */
   real_T Sum4;                         /* '<Root>/Sum4' */
-  real_T RateLimitertheta_sp;          /* '<Root>/Rate Limiter-theta_sp' */
   real_T Sum1;                         /* '<Root>/Sum1' */
-  real_T Sum2;                         /* '<Root>/Sum2' */
   real_T Memory[3];                    /* '<S30>/Memory' */
   real_T Memory1[3];                   /* '<S30>/Memory1' */
   real_T Product[4];                   /* '<S68>/Product' */
@@ -258,7 +257,7 @@ struct B_V4_FUZZY_T {
   real_T Switch1[3];                   /* '<S30>/Switch1' */
   real_T Switch2;                      /* '<S30>/Switch2' */
   real_T Output;                       /* '<S48>/Output' */
-  real_T Switch3_l;                    /* '<S30>/Switch3' */
+  real_T Switch3;                      /* '<S30>/Switch3' */
   real_T Power;                        /* '<S30>/Product2' */
   real_T Gain3;                        /* '<S30>/Gain3' */
   real_T EnergykWh;                    /* '<S30>/Gain1' */
@@ -323,6 +322,7 @@ struct B_V4_FUZZY_T {
   real_T R_tmp;
   real_T R_tmp_n;
   real_T Switch2_b;                    /* '<Root>/Switch2' */
+  real_T Switch3_l;                    /* '<Root>/Switch3' */
   real_T a;
   real_T b;
   real_T c;
@@ -382,6 +382,10 @@ struct DW_V4_FUZZY_T {
   real_T LastUAtTimeA;                 /* '<Root>/Derivative4' */
   real_T TimeStampB;                   /* '<Root>/Derivative4' */
   real_T LastUAtTimeB;                 /* '<Root>/Derivative4' */
+  real_T TimeStampA_n;                 /* '<Root>/Derivative' */
+  real_T LastUAtTimeA_j;               /* '<Root>/Derivative' */
+  real_T TimeStampB_g;                 /* '<Root>/Derivative' */
+  real_T LastUAtTimeB_h;               /* '<Root>/Derivative' */
   real_T PrevY;                        /* '<Root>/Rate Limiter2' */
   real_T TimeStampA_c;                 /* '<Root>/Derivative3' */
   real_T LastUAtTimeA_g;               /* '<Root>/Derivative3' */
@@ -391,16 +395,10 @@ struct DW_V4_FUZZY_T {
   real_T LastUAtTimeA_p;               /* '<Root>/Derivative1' */
   real_T TimeStampB_f;                 /* '<Root>/Derivative1' */
   real_T LastUAtTimeB_e;               /* '<Root>/Derivative1' */
-  real_T PrevY_g;                      /* '<Root>/Rate Limiter-theta_sp' */
-  real_T LastMajorTime;                /* '<Root>/Rate Limiter-theta_sp' */
   real_T TimeStampA_j;                 /* '<Root>/Derivative2' */
   real_T LastUAtTimeA_m;               /* '<Root>/Derivative2' */
-  real_T TimeStampB_g;                 /* '<Root>/Derivative2' */
+  real_T TimeStampB_ge;                /* '<Root>/Derivative2' */
   real_T LastUAtTimeB_fy;              /* '<Root>/Derivative2' */
-  real_T TimeStampA_n;                 /* '<Root>/Derivative' */
-  real_T LastUAtTimeA_j;               /* '<Root>/Derivative' */
-  real_T TimeStampB_gy;                /* '<Root>/Derivative' */
-  real_T LastUAtTimeB_h;               /* '<Root>/Derivative' */
   real_T Memory_PreviousInput[3];      /* '<S30>/Memory' */
   real_T Memory1_PreviousInput[3];     /* '<S30>/Memory1' */
   real_T NextOutput[4];                /* '<S68>/White Noise' */
@@ -419,7 +417,6 @@ struct DW_V4_FUZZY_T {
   /* '<S63>/if Height < Max low altitude  elseif Height > Min isotropic altitude ' */
   boolean_T IC_FirstOutputTime;        /* '<S30>/IC' */
   boolean_T Integrator_DWORK1;         /* '<S30>/Integrator' */
-  boolean_T PrevLimited;               /* '<Root>/Rate Limiter-theta_sp' */
   boolean_T objisempty;                /* '<S32>/SourceBlock' */
   boolean_T objisempty_g;              /* '<S31>/SourceBlock' */
   boolean_T objisempty_a;              /* '<S56>/SourceBlock' */
@@ -536,20 +533,17 @@ struct ODE4_IntgData {
 
 /* Constant parameters (default storage) */
 struct ConstP_V4_FUZZY_T {
-  /* Expression: fis.outputSamplePoints
-   * Referenced by: '<S7>/Output Sample Points'
+  /* Pooled Parameter (Expression: fis.outputSamplePoints)
+   * Referenced by:
+   *   '<S7>/Output Sample Points'
+   *   '<S9>/Output Sample Points'
    */
-  real_T OutputSamplePoints_Value[101];
+  real_T pooled4[101];
 
   /* Expression: fis.outputSamplePoints
    * Referenced by: '<S8>/Output Sample Points'
    */
-  real_T OutputSamplePoints_Value_c[101];
-
-  /* Expression: fis.outputSamplePoints
-   * Referenced by: '<S9>/Output Sample Points'
-   */
-  real_T OutputSamplePoints_Value_ch[101];
+  real_T OutputSamplePoints_Value[101];
 
   /* Expression: fis.outputSamplePoints
    * Referenced by: '<S10>/Output Sample Points'
@@ -566,7 +560,7 @@ struct ConstP_V4_FUZZY_T {
    *   '<S30>/IC'
    *   '<S30>/Memory2'
    */
-  real_T pooled11[12];
+  real_T pooled12[12];
 
   /* Expression: h_vec
    * Referenced by: '<S75>/PreLook-Up Index Search  (altitude)'

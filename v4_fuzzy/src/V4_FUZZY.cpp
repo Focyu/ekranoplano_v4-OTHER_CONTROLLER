@@ -6,9 +6,9 @@
  *
  * Code generation for model "V4_FUZZY".
  *
- * Model version              : 13.4
+ * Model version              : 13.6
  * Simulink Coder version : 26.1 (R2026a) 20-Nov-2025
- * C++ source code generated on : Sun May 24 10:28:20 2026
+ * C++ source code generated on : Tue May 26 13:17:03 2026
  *
  * Target selection: ert.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -908,73 +908,75 @@ void V4_FUZZY::step()
     static const int8_T f_0[15] = { 1, 1, 1, 2, 3, 2, 3, 3, 3, 4, 4, 4, 5, 5, 2
     };
 
-    static const real_T b_4[3] = { -0.09, -0.09, -0.036 };
+    static const real_T b_4[3] = { -5.0, -5.0, -2.0 };
 
-    static const real_T c_1[3] = { -0.063, -0.027, 0.0 };
+    static const real_T c_1[3] = { -4.0, -1.0, 0.0 };
 
-    static const real_T d_1[3] = { 0.0, 0.027, 0.063 };
+    static const real_T d_1[3] = { 0.0, 1.0, 4.0 };
 
-    static const real_T e_1[3] = { 0.036, 0.09, 0.09 };
+    static const real_T e_1[3] = { 2.0, 5.0, 5.0 };
 
-    static const real_T f_1[3] = { -0.15, -0.15, 0.0 };
+    static const real_T f_1[3] = { -3.0, -3.0, -0.2 };
 
-    static const real_T g_0[3] = { 0.0, 0.15, 0.15 };
+    static const real_T g_0[3] = { 0.2, 3.0, 3.0 };
 
-    static const real_T b_5[3] = { -0.1, -0.1, -0.04 };
+    static const int8_T h_0[30] = { 1, 1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 4, 5, 5, 5,
+      1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3 };
 
-    static const real_T c_2[3] = { -0.07, -0.03, 0.0 };
+    static const real_T b_5[3] = { -0.15, -0.15, -0.08 };
 
-    static const real_T d_2[3] = { 0.0, 0.03, 0.07 };
+    static const real_T c_2[3] = { -0.12, -0.05, 0.0 };
 
-    static const real_T e_2[3] = { 0.04, 0.1, 0.1 };
+    static const real_T d_2[3] = { 0.0, 0.05, 0.12 };
 
-    static const real_T f_2[3] = { -0.5, -0.5, 0.0 };
+    static const real_T e_2[3] = { 0.08, 0.15, 0.15 };
 
-    static const real_T g_1[3] = { 0.0, 0.5, 0.5 };
-
-    static const real_T b_6[3] = { -0.35, -0.35, -0.2 };
-
-    static const real_T c_3[3] = { -0.25, -0.12, 0.0 };
-
-    static const real_T d_3[3] = { 0.0, 0.12, 0.25 };
-
-    static const real_T e_3[3] = { 0.2, 0.35, 0.35 };
-
-    static const real_T f_3[3] = { -1.0, -1.0, -0.08 };
-
-    static const real_T g_2[3] = { 0.08, 1.0, 1.0 };
-
-    static const real_T b_7[3] = { -0.2, -0.2, -0.08 };
-
-    static const real_T c_4[3] = { -0.12, -0.05, 0.0 };
-
-    static const real_T d_4[3] = { 0.0, 0.05, 0.12 };
-
-    static const real_T e_4[3] = { 0.08, 0.2, 0.2 };
-
-    static const real_T b_8[3] = { -3.0, -3.0, -1.5 };
-
-    static const real_T c_5[3] = { -2.0, -0.8, 0.0 };
-
-    static const real_T d_5[3] = { 0.0, 0.8, 2.0 };
-
-    static const real_T e_5[3] = { 1.5, 3.0, 3.0 };
-
-    static const real_T f_4[3] = { -1.0, -1.0, 0.0 };
-
-    static const real_T g_3[3] = { 0.0, 1.0, 1.0 };
-
-    static const int8_T h_0[30] = { 5, 5, 5, 4, 4, 4, 3, 3, 3, 2, 2, 2, 1, 1, 1,
-      3, 2, 1, 3, 2, 1, 3, 2, 1, 3, 2, 1, 3, 2, 1 };
-
-    static const real_T b_9[3] = { -0.07, -0.07, -0.025 };
-
-    static const real_T c_6[3] = { -0.04, -0.015, 0.0 };
-
-    static const real_T d_6[3] = { 0.08, 0.15, 0.15 };
-
-    static const int8_T e_6[15] = { 5, 5, 4, 4, 4, 3, 4, 3, 2, 3, 2, 1, 2, 1, 1
+    static const int8_T f_2[15] = { 1, 1, 2, 1, 2, 3, 2, 3, 4, 3, 4, 5, 4, 5, 5
     };
+
+    static const real_T b_6[3] = { -0.09, -0.09, -0.036 };
+
+    static const real_T c_3[3] = { -0.063, -0.027, 0.0 };
+
+    static const real_T d_3[3] = { 0.0, 0.027, 0.063 };
+
+    static const real_T e_3[3] = { 0.036, 0.09, 0.09 };
+
+    static const real_T f_3[3] = { -0.15, -0.15, 0.0 };
+
+    static const real_T g_1[3] = { 0.0, 0.15, 0.15 };
+
+    static const real_T b_7[3] = { -0.1, -0.1, -0.04 };
+
+    static const real_T c_4[3] = { -0.07, -0.03, 0.0 };
+
+    static const real_T d_4[3] = { 0.0, 0.03, 0.07 };
+
+    static const real_T e_4[3] = { 0.04, 0.1, 0.1 };
+
+    static const real_T f_4[3] = { -0.5, -0.5, 0.0 };
+
+    static const real_T g_2[3] = { 0.0, 0.5, 0.5 };
+
+    static const real_T b_8[3] = { -0.5, -0.5, -0.25 };
+
+    static const real_T c_5[3] = { -0.4, -0.15, 0.0 };
+
+    static const real_T d_5[3] = { 0.0, 0.15, 0.4 };
+
+    static const real_T e_5[3] = { 0.25, 0.5, 0.5 };
+
+    static const real_T f_5[3] = { -1.0, -1.0, -0.05 };
+
+    static const real_T g_3[3] = { 0.05, 1.0, 1.0 };
+
+    static const real_T b_9[3] = { -0.1, -0.1, -0.05 };
+
+    static const real_T c_6[3] = { -0.08, -0.03, 0.0 };
+
+    static const real_T d_6[3] = { 0.0, 0.03, 0.08 };
+
+    static const real_T e_6[3] = { 0.05, 0.1, 0.1 };
 
     /* BusAssignment: '<Root>/Bus Assignment-IMU' */
     memset(&V4_FUZZY_B.BusAssignmentIMU, 0, sizeof(SL_Bus_sensor_msgs_Imu));
@@ -1021,7 +1023,7 @@ void V4_FUZZY::step()
         V4_FUZZY_DW.IC_FirstOutputTime = false;
 
         /* InitialCondition: '<S30>/IC' */
-        memcpy(&V4_FUZZY_B.IC[0], &V4_FUZZY_ConstP.pooled11[0], 12U * sizeof
+        memcpy(&V4_FUZZY_B.IC[0], &V4_FUZZY_ConstP.pooled12[0], 12U * sizeof
                (real_T));
       }
 
@@ -1496,16 +1498,165 @@ void V4_FUZZY::step()
       /* Switch: '<Root>/Switch3' */
       if (V4_FUZZY_B.SourceBlock_o1_o) {
         /* Switch: '<Root>/Switch3' */
-        V4_FUZZY_B.Switch3 = V4_FUZZY_B.EnabledSubsystem_b.In1.data;
+        V4_FUZZY_B.Switch3_l = V4_FUZZY_B.EnabledSubsystem_b.In1.data;
       } else {
         /* Switch: '<Root>/Switch3' incorporates:
          *  UnitDelay: '<Root>/Unit Delay3'
          */
-        V4_FUZZY_B.Switch3 = V4_FUZZY_DW.UnitDelay3_DSTATE;
+        V4_FUZZY_B.Switch3_l = V4_FUZZY_DW.UnitDelay3_DSTATE;
       }
 
       /* End of Switch: '<Root>/Switch3' */
 
+      /* Gain: '<Root>/Gain1' */
+      V4_FUZZY_B.Gain1 = -V4_FUZZY_B.Switch3_l;
+    }
+
+    /* Sum: '<Root>/Sum2' */
+    V4_FUZZY_B.Sum2 = V4_FUZZY_B.Gain1 - V4_FUZZY_B.GainZ;
+
+    /* Derivative: '<Root>/Derivative' */
+    if ((V4_FUZZY_DW.TimeStampA_n >= V4_FUZZY_B.cosa) &&
+        (V4_FUZZY_DW.TimeStampB_g >= V4_FUZZY_B.cosa)) {
+      V4_FUZZY_B.rtb_CoordinateTransformationC_b = 0.0;
+    } else {
+      V4_FUZZY_B.rtb_CoordinateTransformationC_b = V4_FUZZY_DW.TimeStampA_n;
+      lastU = &V4_FUZZY_DW.LastUAtTimeA_j;
+      if (V4_FUZZY_DW.TimeStampA_n < V4_FUZZY_DW.TimeStampB_g) {
+        if (V4_FUZZY_DW.TimeStampB_g < V4_FUZZY_B.cosa) {
+          V4_FUZZY_B.rtb_CoordinateTransformationC_b = V4_FUZZY_DW.TimeStampB_g;
+          lastU = &V4_FUZZY_DW.LastUAtTimeB_h;
+        }
+      } else if (V4_FUZZY_DW.TimeStampA_n >= V4_FUZZY_B.cosa) {
+        V4_FUZZY_B.rtb_CoordinateTransformationC_b = V4_FUZZY_DW.TimeStampB_g;
+        lastU = &V4_FUZZY_DW.LastUAtTimeB_h;
+      }
+
+      V4_FUZZY_B.rtb_CoordinateTransformationC_b = (V4_FUZZY_B.Sum2 - *lastU) /
+        (V4_FUZZY_B.cosa - V4_FUZZY_B.rtb_CoordinateTransformationC_b);
+    }
+
+    /* Outputs for Atomic SubSystem: '<Root>/Fuzzy Logic  Controller - Altura' */
+    /* MATLAB Function: '<S8>/Evaluate Rule Antecedents' incorporates:
+     *  SignalConversion generated from: '<S37>/ SFunction '
+     */
+    V4_FUZZY_B.rtb_CoordinateTransformationC_l = 0.0;
+    V4_FUZZY_B.inputMFCache[0] = V4_FUZZY_trimf(V4_FUZZY_B.Sum2, b_4);
+    V4_FUZZY_B.inputMFCache[1] = V4_FUZZY_trimf(V4_FUZZY_B.Sum2, c_1);
+    V4_FUZZY_B.Dtot[0] = -1.0;
+    V4_FUZZY_B.Dtot[1] = 0.0;
+    V4_FUZZY_B.Dtot[2] = 1.0;
+    V4_FUZZY_B.inputMFCache[2] = V4_FUZZY_trimf(V4_FUZZY_B.Sum2, V4_FUZZY_B.Dtot);
+    V4_FUZZY_B.inputMFCache[3] = V4_FUZZY_trimf(V4_FUZZY_B.Sum2, d_1);
+    V4_FUZZY_B.inputMFCache[4] = V4_FUZZY_trimf(V4_FUZZY_B.Sum2, e_1);
+    V4_FUZZY_B.inputMFCache[5] = V4_FUZZY_trimf
+      (V4_FUZZY_B.rtb_CoordinateTransformationC_b, f_1);
+    V4_FUZZY_B.Dtot[0] = -0.3;
+    V4_FUZZY_B.Dtot[1] = 0.0;
+    V4_FUZZY_B.Dtot[2] = 0.3;
+    V4_FUZZY_B.inputMFCache[6] = V4_FUZZY_trimf
+      (V4_FUZZY_B.rtb_CoordinateTransformationC_b, V4_FUZZY_B.Dtot);
+    V4_FUZZY_B.inputMFCache[7] = V4_FUZZY_trimf
+      (V4_FUZZY_B.rtb_CoordinateTransformationC_b, g_0);
+    for (i = 0; i < 15; i++) {
+      V4_FUZZY_B.cosc = 1.0;
+      for (rtb_sec_0 = 0; rtb_sec_0 < 2; rtb_sec_0++) {
+        V4_FUZZY_B.rtb_CoordinateTransformationC_b = V4_FUZZY_B.inputMFCache
+          [(h_0[15 * rtb_sec_0 + i] + 5 * rtb_sec_0) - 1];
+        if ((V4_FUZZY_B.cosc > V4_FUZZY_B.rtb_CoordinateTransformationC_b) ||
+            (rtIsNaN(V4_FUZZY_B.cosc) && !rtIsNaN
+             (V4_FUZZY_B.rtb_CoordinateTransformationC_b))) {
+          V4_FUZZY_B.cosc = V4_FUZZY_B.rtb_CoordinateTransformationC_b;
+        }
+      }
+
+      V4_FUZZY_B.antecedentOutputs[i] = V4_FUZZY_B.cosc;
+      V4_FUZZY_B.rtb_CoordinateTransformationC_l += V4_FUZZY_B.cosc;
+    }
+
+    /* MATLAB Function: '<S8>/Evaluate Rule Consequents' incorporates:
+     *  Constant: '<S8>/Output Sample Points'
+     *  MATLAB Function: '<S11>/Evaluate Rule Consequents'
+     */
+    V4_FUZZY_trimf_l(V4_FUZZY_ConstP.OutputSamplePoints_Value, b_5,
+                     V4_FUZZY_B.dv);
+    V4_FUZZY_trimf_l(V4_FUZZY_ConstP.OutputSamplePoints_Value, c_2,
+                     V4_FUZZY_B.dv1);
+    V4_FUZZY_B.Dtot[0] = -0.03;
+    V4_FUZZY_B.Dtot[1] = 0.0;
+    V4_FUZZY_B.Dtot[2] = 0.03;
+    V4_FUZZY_trimf_l(V4_FUZZY_ConstP.OutputSamplePoints_Value, V4_FUZZY_B.Dtot,
+                     V4_FUZZY_B.dv2);
+    V4_FUZZY_trimf_l(V4_FUZZY_ConstP.OutputSamplePoints_Value, d_2,
+                     V4_FUZZY_B.dv3);
+    V4_FUZZY_trimf_l(V4_FUZZY_ConstP.OutputSamplePoints_Value, e_2,
+                     V4_FUZZY_B.dv4);
+    for (i = 0; i < 101; i++) {
+      /* Outputs for Atomic SubSystem: '<Root>/Fuzzy Logic  Controller - Velocidad' */
+      V4_FUZZY_B.aggregatedOutputs[i] = 0.0;
+
+      /* End of Outputs for SubSystem: '<Root>/Fuzzy Logic  Controller - Velocidad' */
+      V4_FUZZY_B.outputMFCache[5 * i] = V4_FUZZY_B.dv[i];
+      V4_FUZZY_B.outputMFCache[5 * i + 1] = V4_FUZZY_B.dv1[i];
+      V4_FUZZY_B.outputMFCache[5 * i + 2] = V4_FUZZY_B.dv2[i];
+      V4_FUZZY_B.outputMFCache[5 * i + 3] = V4_FUZZY_B.dv3[i];
+      V4_FUZZY_B.outputMFCache[5 * i + 4] = V4_FUZZY_B.dv4[i];
+    }
+
+    for (i = 0; i < 15; i++) {
+      rtPrevAction = f_2[i];
+      V4_FUZZY_B.cosc = V4_FUZZY_B.antecedentOutputs[i];
+      for (rtb_sec_0 = 0; rtb_sec_0 < 101; rtb_sec_0++) {
+        V4_FUZZY_B.rtb_CoordinateTransformationC_o = V4_FUZZY_B.outputMFCache[(5
+          * rtb_sec_0 + rtPrevAction) - 1];
+        if ((V4_FUZZY_B.rtb_CoordinateTransformationC_o > V4_FUZZY_B.cosc) ||
+            (rtIsNaN(V4_FUZZY_B.rtb_CoordinateTransformationC_o) && !rtIsNaN
+             (V4_FUZZY_B.cosc))) {
+          V4_FUZZY_B.rtb_CoordinateTransformationC_o = V4_FUZZY_B.cosc;
+        }
+
+        if (V4_FUZZY_B.aggregatedOutputs[rtb_sec_0] <
+            V4_FUZZY_B.rtb_CoordinateTransformationC_o) {
+          V4_FUZZY_B.aggregatedOutputs[rtb_sec_0] =
+            V4_FUZZY_B.rtb_CoordinateTransformationC_o;
+        }
+      }
+    }
+
+    /* End of MATLAB Function: '<S8>/Evaluate Rule Consequents' */
+
+    /* MATLAB Function: '<S8>/Defuzzify Outputs' incorporates:
+     *  Constant: '<S8>/Output Sample Points'
+     *  MATLAB Function: '<S8>/Evaluate Rule Antecedents'
+     */
+    if (V4_FUZZY_B.rtb_CoordinateTransformationC_l == 0.0) {
+      V4_FUZZY_B.defuzzifiedOutputs_o = 0.0;
+    } else {
+      V4_FUZZY_B.rtb_CoordinateTransformationC_o = 0.0;
+      V4_FUZZY_B.rtb_CoordinateTransformationC_b = 0.0;
+      for (i = 0; i < 101; i++) {
+        V4_FUZZY_B.rtb_CoordinateTransformationC_b +=
+          V4_FUZZY_B.aggregatedOutputs[i];
+      }
+
+      if (V4_FUZZY_B.rtb_CoordinateTransformationC_b == 0.0) {
+        V4_FUZZY_B.defuzzifiedOutputs_o = 0.0;
+      } else {
+        for (i = 0; i < 101; i++) {
+          V4_FUZZY_B.rtb_CoordinateTransformationC_o +=
+            V4_FUZZY_ConstP.OutputSamplePoints_Value[i] *
+            V4_FUZZY_B.aggregatedOutputs[i];
+        }
+
+        V4_FUZZY_B.defuzzifiedOutputs_o = 1.0 /
+          V4_FUZZY_B.rtb_CoordinateTransformationC_b *
+          V4_FUZZY_B.rtb_CoordinateTransformationC_o;
+      }
+    }
+
+    /* End of MATLAB Function: '<S8>/Defuzzify Outputs' */
+    /* End of Outputs for SubSystem: '<Root>/Fuzzy Logic  Controller - Altura' */
+    if (tmp_0) {
       /* MATLABSystem: '<S32>/SourceBlock' */
       V4_FUZZY_B.SourceBlock_o1 = Sub_V4_FUZZY_377.getLatestMessage
         (&V4_FUZZY_B.SourceBlock_o2);
@@ -1578,23 +1729,23 @@ void V4_FUZZY::step()
      *  SignalConversion generated from: '<S43>/ SFunction '
      */
     V4_FUZZY_B.rtb_CoordinateTransformationC_l = 0.0;
-    V4_FUZZY_B.inputMFCache[0] = V4_FUZZY_trimf(V4_FUZZY_B.Sum5, b_4);
-    V4_FUZZY_B.inputMFCache[1] = V4_FUZZY_trimf(V4_FUZZY_B.Sum5, c_1);
+    V4_FUZZY_B.inputMFCache[0] = V4_FUZZY_trimf(V4_FUZZY_B.Sum5, b_6);
+    V4_FUZZY_B.inputMFCache[1] = V4_FUZZY_trimf(V4_FUZZY_B.Sum5, c_3);
     V4_FUZZY_B.Dtot[0] = -0.018;
     V4_FUZZY_B.Dtot[1] = 0.0;
     V4_FUZZY_B.Dtot[2] = 0.018;
     V4_FUZZY_B.inputMFCache[2] = V4_FUZZY_trimf(V4_FUZZY_B.Sum5, V4_FUZZY_B.Dtot);
-    V4_FUZZY_B.inputMFCache[3] = V4_FUZZY_trimf(V4_FUZZY_B.Sum5, d_1);
-    V4_FUZZY_B.inputMFCache[4] = V4_FUZZY_trimf(V4_FUZZY_B.Sum5, e_1);
+    V4_FUZZY_B.inputMFCache[3] = V4_FUZZY_trimf(V4_FUZZY_B.Sum5, d_3);
+    V4_FUZZY_B.inputMFCache[4] = V4_FUZZY_trimf(V4_FUZZY_B.Sum5, e_3);
     V4_FUZZY_B.inputMFCache[5] = V4_FUZZY_trimf
-      (V4_FUZZY_B.rtb_CoordinateTransformationC_b, f_1);
+      (V4_FUZZY_B.rtb_CoordinateTransformationC_b, f_3);
     V4_FUZZY_B.Dtot[0] = -0.06;
     V4_FUZZY_B.Dtot[1] = 0.0;
     V4_FUZZY_B.Dtot[2] = 0.06;
     V4_FUZZY_B.inputMFCache[6] = V4_FUZZY_trimf
       (V4_FUZZY_B.rtb_CoordinateTransformationC_b, V4_FUZZY_B.Dtot);
     V4_FUZZY_B.inputMFCache[7] = V4_FUZZY_trimf
-      (V4_FUZZY_B.rtb_CoordinateTransformationC_b, g_0);
+      (V4_FUZZY_B.rtb_CoordinateTransformationC_b, g_1);
     for (i = 0; i < 15; i++) {
       V4_FUZZY_B.cosc = 1.0;
       for (rtb_sec_0 = 0; rtb_sec_0 < 2; rtb_sec_0++) {
@@ -1615,18 +1766,18 @@ void V4_FUZZY::step()
      *  Constant: '<S10>/Output Sample Points'
      *  MATLAB Function: '<S11>/Evaluate Rule Consequents'
      */
-    V4_FUZZY_trimf_l(V4_FUZZY_ConstP.OutputSamplePoints_Value_o, b_4,
+    V4_FUZZY_trimf_l(V4_FUZZY_ConstP.OutputSamplePoints_Value_o, b_6,
                      V4_FUZZY_B.dv);
-    V4_FUZZY_trimf_l(V4_FUZZY_ConstP.OutputSamplePoints_Value_o, c_1,
+    V4_FUZZY_trimf_l(V4_FUZZY_ConstP.OutputSamplePoints_Value_o, c_3,
                      V4_FUZZY_B.dv1);
     V4_FUZZY_B.Dtot[0] = -0.018;
     V4_FUZZY_B.Dtot[1] = 0.0;
     V4_FUZZY_B.Dtot[2] = 0.018;
     V4_FUZZY_trimf_l(V4_FUZZY_ConstP.OutputSamplePoints_Value_o, V4_FUZZY_B.Dtot,
                      V4_FUZZY_B.dv2);
-    V4_FUZZY_trimf_l(V4_FUZZY_ConstP.OutputSamplePoints_Value_o, d_1,
+    V4_FUZZY_trimf_l(V4_FUZZY_ConstP.OutputSamplePoints_Value_o, d_3,
                      V4_FUZZY_B.dv3);
-    V4_FUZZY_trimf_l(V4_FUZZY_ConstP.OutputSamplePoints_Value_o, e_1,
+    V4_FUZZY_trimf_l(V4_FUZZY_ConstP.OutputSamplePoints_Value_o, e_3,
                      V4_FUZZY_B.dv4);
     for (i = 0; i < 101; i++) {
       /* Outputs for Atomic SubSystem: '<Root>/Fuzzy Logic  Controller - Velocidad' */
@@ -1739,23 +1890,23 @@ void V4_FUZZY::step()
      *  SignalConversion generated from: '<S34>/ SFunction '
      */
     V4_FUZZY_B.rtb_CoordinateTransformationC_l = 0.0;
-    V4_FUZZY_B.inputMFCache[0] = V4_FUZZY_trimf(V4_FUZZY_B.Sum4, b_5);
-    V4_FUZZY_B.inputMFCache[1] = V4_FUZZY_trimf(V4_FUZZY_B.Sum4, c_2);
+    V4_FUZZY_B.inputMFCache[0] = V4_FUZZY_trimf(V4_FUZZY_B.Sum4, b_7);
+    V4_FUZZY_B.inputMFCache[1] = V4_FUZZY_trimf(V4_FUZZY_B.Sum4, c_4);
     V4_FUZZY_B.Dtot[0] = -0.02;
     V4_FUZZY_B.Dtot[1] = 0.0;
     V4_FUZZY_B.Dtot[2] = 0.02;
     V4_FUZZY_B.inputMFCache[2] = V4_FUZZY_trimf(V4_FUZZY_B.Sum4, V4_FUZZY_B.Dtot);
-    V4_FUZZY_B.inputMFCache[3] = V4_FUZZY_trimf(V4_FUZZY_B.Sum4, d_2);
-    V4_FUZZY_B.inputMFCache[4] = V4_FUZZY_trimf(V4_FUZZY_B.Sum4, e_2);
+    V4_FUZZY_B.inputMFCache[3] = V4_FUZZY_trimf(V4_FUZZY_B.Sum4, d_4);
+    V4_FUZZY_B.inputMFCache[4] = V4_FUZZY_trimf(V4_FUZZY_B.Sum4, e_4);
     V4_FUZZY_B.inputMFCache[5] = V4_FUZZY_trimf
-      (V4_FUZZY_B.rtb_CoordinateTransformationC_b, f_2);
+      (V4_FUZZY_B.rtb_CoordinateTransformationC_b, f_4);
     V4_FUZZY_B.Dtot[0] = -0.1;
     V4_FUZZY_B.Dtot[1] = 0.0;
     V4_FUZZY_B.Dtot[2] = 0.1;
     V4_FUZZY_B.inputMFCache[6] = V4_FUZZY_trimf
       (V4_FUZZY_B.rtb_CoordinateTransformationC_b, V4_FUZZY_B.Dtot);
     V4_FUZZY_B.inputMFCache[7] = V4_FUZZY_trimf
-      (V4_FUZZY_B.rtb_CoordinateTransformationC_b, g_1);
+      (V4_FUZZY_B.rtb_CoordinateTransformationC_b, g_2);
     for (i = 0; i < 15; i++) {
       V4_FUZZY_B.cosc = 1.0;
       for (rtb_sec_0 = 0; rtb_sec_0 < 2; rtb_sec_0++) {
@@ -1776,19 +1927,14 @@ void V4_FUZZY::step()
      *  Constant: '<S7>/Output Sample Points'
      *  MATLAB Function: '<S11>/Evaluate Rule Consequents'
      */
-    V4_FUZZY_trimf_l(V4_FUZZY_ConstP.OutputSamplePoints_Value, b_5,
-                     V4_FUZZY_B.dv);
-    V4_FUZZY_trimf_l(V4_FUZZY_ConstP.OutputSamplePoints_Value, c_2,
-                     V4_FUZZY_B.dv1);
+    V4_FUZZY_trimf_l(V4_FUZZY_ConstP.pooled4, b_7, V4_FUZZY_B.dv);
+    V4_FUZZY_trimf_l(V4_FUZZY_ConstP.pooled4, c_4, V4_FUZZY_B.dv1);
     V4_FUZZY_B.Dtot[0] = -0.02;
     V4_FUZZY_B.Dtot[1] = 0.0;
     V4_FUZZY_B.Dtot[2] = 0.02;
-    V4_FUZZY_trimf_l(V4_FUZZY_ConstP.OutputSamplePoints_Value, V4_FUZZY_B.Dtot,
-                     V4_FUZZY_B.dv2);
-    V4_FUZZY_trimf_l(V4_FUZZY_ConstP.OutputSamplePoints_Value, d_2,
-                     V4_FUZZY_B.dv3);
-    V4_FUZZY_trimf_l(V4_FUZZY_ConstP.OutputSamplePoints_Value, e_2,
-                     V4_FUZZY_B.dv4);
+    V4_FUZZY_trimf_l(V4_FUZZY_ConstP.pooled4, V4_FUZZY_B.Dtot, V4_FUZZY_B.dv2);
+    V4_FUZZY_trimf_l(V4_FUZZY_ConstP.pooled4, d_4, V4_FUZZY_B.dv3);
+    V4_FUZZY_trimf_l(V4_FUZZY_ConstP.pooled4, e_4, V4_FUZZY_B.dv4);
     for (i = 0; i < 101; i++) {
       /* Outputs for Atomic SubSystem: '<Root>/Fuzzy Logic  Controller - Velocidad' */
       V4_FUZZY_B.aggregatedOutputs[i] = 0.0;
@@ -1842,8 +1988,7 @@ void V4_FUZZY::step()
       } else {
         for (i = 0; i < 101; i++) {
           V4_FUZZY_B.rtb_CoordinateTransformationC_o +=
-            V4_FUZZY_ConstP.OutputSamplePoints_Value[i] *
-            V4_FUZZY_B.aggregatedOutputs[i];
+            V4_FUZZY_ConstP.pooled4[i] * V4_FUZZY_B.aggregatedOutputs[i];
         }
 
         V4_FUZZY_B.defuzzifiedOutputs_k = 1.0 /
@@ -1855,79 +2000,28 @@ void V4_FUZZY::step()
     /* End of MATLAB Function: '<S7>/Defuzzify Outputs' */
     /* End of Outputs for SubSystem: '<Root>/Fuzzy Logic  Controller - Aleron' */
 
-    /* RateLimiter: '<Root>/Rate Limiter-theta_sp' */
-    if (V4_FUZZY_DW.LastMajorTime == (rtInf)) {
-      /* RateLimiter: '<Root>/Rate Limiter-theta_sp' */
-      V4_FUZZY_B.RateLimitertheta_sp = V4_FUZZY_B.defuzzifiedOutputs_k;
-    } else {
-      V4_FUZZY_B.rtb_CoordinateTransformationC_b = (&V4_FUZZY_M)->Timing.t[0];
-      V4_FUZZY_B.rtb_CoordinateTransformationC_o =
-        V4_FUZZY_B.rtb_CoordinateTransformationC_b - V4_FUZZY_DW.LastMajorTime;
-      if (V4_FUZZY_DW.LastMajorTime ==
-          V4_FUZZY_B.rtb_CoordinateTransformationC_b) {
-        if (V4_FUZZY_DW.PrevLimited) {
-          /* RateLimiter: '<Root>/Rate Limiter-theta_sp' */
-          V4_FUZZY_B.RateLimitertheta_sp = V4_FUZZY_DW.PrevY_g;
-        } else {
-          /* RateLimiter: '<Root>/Rate Limiter-theta_sp' */
-          V4_FUZZY_B.RateLimitertheta_sp = V4_FUZZY_B.defuzzifiedOutputs_k;
-        }
-      } else {
-        V4_FUZZY_B.rtb_CoordinateTransformationC_l =
-          V4_FUZZY_B.rtb_CoordinateTransformationC_o * 0.4;
-        V4_FUZZY_B.rtb_CoordinateTransformationC_b =
-          V4_FUZZY_B.defuzzifiedOutputs_k - V4_FUZZY_DW.PrevY_g;
-        if (V4_FUZZY_B.rtb_CoordinateTransformationC_b >
-            V4_FUZZY_B.rtb_CoordinateTransformationC_l) {
-          /* RateLimiter: '<Root>/Rate Limiter-theta_sp' */
-          V4_FUZZY_B.RateLimitertheta_sp = V4_FUZZY_DW.PrevY_g +
-            V4_FUZZY_B.rtb_CoordinateTransformationC_l;
-          serverAvailableOnTime = true;
-        } else {
-          V4_FUZZY_B.rtb_CoordinateTransformationC_o *= -0.4;
-          if (V4_FUZZY_B.rtb_CoordinateTransformationC_b <
-              V4_FUZZY_B.rtb_CoordinateTransformationC_o) {
-            /* RateLimiter: '<Root>/Rate Limiter-theta_sp' */
-            V4_FUZZY_B.RateLimitertheta_sp = V4_FUZZY_DW.PrevY_g +
-              V4_FUZZY_B.rtb_CoordinateTransformationC_o;
-            serverAvailableOnTime = true;
-          } else {
-            /* RateLimiter: '<Root>/Rate Limiter-theta_sp' */
-            V4_FUZZY_B.RateLimitertheta_sp = V4_FUZZY_B.defuzzifiedOutputs_k;
-            serverAvailableOnTime = false;
-          }
-        }
-
-        if (rtsiIsModeUpdateTimeStep(&(&V4_FUZZY_M)->solverInfo)) {
-          V4_FUZZY_DW.PrevLimited = serverAvailableOnTime;
-        }
-      }
-    }
-
-    /* End of RateLimiter: '<Root>/Rate Limiter-theta_sp' */
-
     /* Sum: '<Root>/Sum1' */
-    V4_FUZZY_B.Sum1 = V4_FUZZY_B.RateLimitertheta_sp - V4_FUZZY_B.x[7];
+    V4_FUZZY_B.Sum1 = V4_FUZZY_B.defuzzifiedOutputs_o - V4_FUZZY_B.x[7];
 
     /* Derivative: '<Root>/Derivative2' */
     if ((V4_FUZZY_DW.TimeStampA_j >= V4_FUZZY_B.cosa) &&
-        (V4_FUZZY_DW.TimeStampB_g >= V4_FUZZY_B.cosa)) {
-      V4_FUZZY_B.rtb_CoordinateTransformationC_b = 0.0;
+        (V4_FUZZY_DW.TimeStampB_ge >= V4_FUZZY_B.cosa)) {
+      V4_FUZZY_B.cosa = 0.0;
     } else {
       V4_FUZZY_B.rtb_CoordinateTransformationC_b = V4_FUZZY_DW.TimeStampA_j;
       lastU = &V4_FUZZY_DW.LastUAtTimeA_m;
-      if (V4_FUZZY_DW.TimeStampA_j < V4_FUZZY_DW.TimeStampB_g) {
-        if (V4_FUZZY_DW.TimeStampB_g < V4_FUZZY_B.cosa) {
-          V4_FUZZY_B.rtb_CoordinateTransformationC_b = V4_FUZZY_DW.TimeStampB_g;
+      if (V4_FUZZY_DW.TimeStampA_j < V4_FUZZY_DW.TimeStampB_ge) {
+        if (V4_FUZZY_DW.TimeStampB_ge < V4_FUZZY_B.cosa) {
+          V4_FUZZY_B.rtb_CoordinateTransformationC_b = V4_FUZZY_DW.TimeStampB_ge;
           lastU = &V4_FUZZY_DW.LastUAtTimeB_fy;
         }
       } else if (V4_FUZZY_DW.TimeStampA_j >= V4_FUZZY_B.cosa) {
-        V4_FUZZY_B.rtb_CoordinateTransformationC_b = V4_FUZZY_DW.TimeStampB_g;
+        V4_FUZZY_B.rtb_CoordinateTransformationC_b = V4_FUZZY_DW.TimeStampB_ge;
         lastU = &V4_FUZZY_DW.LastUAtTimeB_fy;
       }
 
-      V4_FUZZY_B.rtb_CoordinateTransformationC_b = (V4_FUZZY_B.Sum1 - *lastU) /
-        (V4_FUZZY_B.cosa - V4_FUZZY_B.rtb_CoordinateTransformationC_b);
+      V4_FUZZY_B.cosa = (V4_FUZZY_B.Sum1 - *lastU) / (V4_FUZZY_B.cosa -
+        V4_FUZZY_B.rtb_CoordinateTransformationC_b);
     }
 
     /* Outputs for Atomic SubSystem: '<Root>/Fuzzy Logic  Controller - Pitch' */
@@ -1935,28 +2029,25 @@ void V4_FUZZY::step()
      *  SignalConversion generated from: '<S40>/ SFunction '
      */
     V4_FUZZY_B.rtb_CoordinateTransformationC_l = 0.0;
-    V4_FUZZY_B.inputMFCache[0] = V4_FUZZY_trimf(V4_FUZZY_B.Sum1, b_6);
-    V4_FUZZY_B.inputMFCache[1] = V4_FUZZY_trimf(V4_FUZZY_B.Sum1, c_3);
+    V4_FUZZY_B.inputMFCache[0] = V4_FUZZY_trimf(V4_FUZZY_B.Sum1, b_8);
+    V4_FUZZY_B.inputMFCache[1] = V4_FUZZY_trimf(V4_FUZZY_B.Sum1, c_5);
     V4_FUZZY_B.Dtot[0] = -0.1;
     V4_FUZZY_B.Dtot[1] = 0.0;
     V4_FUZZY_B.Dtot[2] = 0.1;
     V4_FUZZY_B.inputMFCache[2] = V4_FUZZY_trimf(V4_FUZZY_B.Sum1, V4_FUZZY_B.Dtot);
-    V4_FUZZY_B.inputMFCache[3] = V4_FUZZY_trimf(V4_FUZZY_B.Sum1, d_3);
-    V4_FUZZY_B.inputMFCache[4] = V4_FUZZY_trimf(V4_FUZZY_B.Sum1, e_3);
-    V4_FUZZY_B.inputMFCache[5] = V4_FUZZY_trimf
-      (V4_FUZZY_B.rtb_CoordinateTransformationC_b, f_3);
-    V4_FUZZY_B.Dtot[0] = -0.15;
+    V4_FUZZY_B.inputMFCache[3] = V4_FUZZY_trimf(V4_FUZZY_B.Sum1, d_5);
+    V4_FUZZY_B.inputMFCache[4] = V4_FUZZY_trimf(V4_FUZZY_B.Sum1, e_5);
+    V4_FUZZY_B.inputMFCache[5] = V4_FUZZY_trimf(V4_FUZZY_B.cosa, f_5);
+    V4_FUZZY_B.Dtot[0] = -0.1;
     V4_FUZZY_B.Dtot[1] = 0.0;
-    V4_FUZZY_B.Dtot[2] = 0.15;
-    V4_FUZZY_B.inputMFCache[6] = V4_FUZZY_trimf
-      (V4_FUZZY_B.rtb_CoordinateTransformationC_b, V4_FUZZY_B.Dtot);
-    V4_FUZZY_B.inputMFCache[7] = V4_FUZZY_trimf
-      (V4_FUZZY_B.rtb_CoordinateTransformationC_b, g_2);
+    V4_FUZZY_B.Dtot[2] = 0.1;
+    V4_FUZZY_B.inputMFCache[6] = V4_FUZZY_trimf(V4_FUZZY_B.cosa, V4_FUZZY_B.Dtot);
+    V4_FUZZY_B.inputMFCache[7] = V4_FUZZY_trimf(V4_FUZZY_B.cosa, g_3);
     for (i = 0; i < 15; i++) {
       V4_FUZZY_B.cosc = 1.0;
       for (rtb_sec_0 = 0; rtb_sec_0 < 2; rtb_sec_0++) {
-        V4_FUZZY_B.rtb_CoordinateTransformationC_b = V4_FUZZY_B.inputMFCache[(h
-          [15 * rtb_sec_0 + i] + 5 * rtb_sec_0) - 1];
+        V4_FUZZY_B.rtb_CoordinateTransformationC_b = V4_FUZZY_B.inputMFCache
+          [(h_0[15 * rtb_sec_0 + i] + 5 * rtb_sec_0) - 1];
         if ((V4_FUZZY_B.cosc > V4_FUZZY_B.rtb_CoordinateTransformationC_b) ||
             (rtIsNaN(V4_FUZZY_B.cosc) && !rtIsNaN
              (V4_FUZZY_B.rtb_CoordinateTransformationC_b))) {
@@ -1972,19 +2063,14 @@ void V4_FUZZY::step()
      *  Constant: '<S9>/Output Sample Points'
      *  MATLAB Function: '<S11>/Evaluate Rule Consequents'
      */
-    V4_FUZZY_trimf_l(V4_FUZZY_ConstP.OutputSamplePoints_Value_ch, b_7,
-                     V4_FUZZY_B.dv);
-    V4_FUZZY_trimf_l(V4_FUZZY_ConstP.OutputSamplePoints_Value_ch, c_4,
-                     V4_FUZZY_B.dv1);
-    V4_FUZZY_B.Dtot[0] = -0.04;
+    V4_FUZZY_trimf_l(V4_FUZZY_ConstP.pooled4, b_9, V4_FUZZY_B.dv);
+    V4_FUZZY_trimf_l(V4_FUZZY_ConstP.pooled4, c_6, V4_FUZZY_B.dv1);
+    V4_FUZZY_B.Dtot[0] = -0.02;
     V4_FUZZY_B.Dtot[1] = 0.0;
-    V4_FUZZY_B.Dtot[2] = 0.04;
-    V4_FUZZY_trimf_l(V4_FUZZY_ConstP.OutputSamplePoints_Value_ch,
-                     V4_FUZZY_B.Dtot, V4_FUZZY_B.dv2);
-    V4_FUZZY_trimf_l(V4_FUZZY_ConstP.OutputSamplePoints_Value_ch, d_4,
-                     V4_FUZZY_B.dv3);
-    V4_FUZZY_trimf_l(V4_FUZZY_ConstP.OutputSamplePoints_Value_ch, e_4,
-                     V4_FUZZY_B.dv4);
+    V4_FUZZY_B.Dtot[2] = 0.02;
+    V4_FUZZY_trimf_l(V4_FUZZY_ConstP.pooled4, V4_FUZZY_B.Dtot, V4_FUZZY_B.dv2);
+    V4_FUZZY_trimf_l(V4_FUZZY_ConstP.pooled4, d_6, V4_FUZZY_B.dv3);
+    V4_FUZZY_trimf_l(V4_FUZZY_ConstP.pooled4, e_6, V4_FUZZY_B.dv4);
     for (i = 0; i < 101; i++) {
       /* Outputs for Atomic SubSystem: '<Root>/Fuzzy Logic  Controller - Velocidad' */
       V4_FUZZY_B.aggregatedOutputs[i] = 0.0;
@@ -1998,7 +2084,7 @@ void V4_FUZZY::step()
     }
 
     for (i = 0; i < 15; i++) {
-      rtPrevAction = f_0[i];
+      rtPrevAction = f_2[i];
       V4_FUZZY_B.cosc = V4_FUZZY_B.antecedentOutputs[i];
       for (rtb_sec_0 = 0; rtb_sec_0 < 101; rtb_sec_0++) {
         V4_FUZZY_B.rtb_CoordinateTransformationC_o = V4_FUZZY_B.outputMFCache[(5
@@ -2038,8 +2124,7 @@ void V4_FUZZY::step()
       } else {
         for (i = 0; i < 101; i++) {
           V4_FUZZY_B.rtb_CoordinateTransformationC_o +=
-            V4_FUZZY_ConstP.OutputSamplePoints_Value_ch[i] *
-            V4_FUZZY_B.aggregatedOutputs[i];
+            V4_FUZZY_ConstP.pooled4[i] * V4_FUZZY_B.aggregatedOutputs[i];
         }
 
         V4_FUZZY_B.defuzzifiedOutputs_g = 1.0 /
@@ -2050,151 +2135,6 @@ void V4_FUZZY::step()
 
     /* End of MATLAB Function: '<S9>/Defuzzify Outputs' */
     /* End of Outputs for SubSystem: '<Root>/Fuzzy Logic  Controller - Pitch' */
-
-    /* Sum: '<Root>/Sum2' */
-    V4_FUZZY_B.Sum2 = V4_FUZZY_B.Switch3 - V4_FUZZY_B.GainZ;
-
-    /* Derivative: '<Root>/Derivative' */
-    if ((V4_FUZZY_DW.TimeStampA_n >= V4_FUZZY_B.cosa) &&
-        (V4_FUZZY_DW.TimeStampB_gy >= V4_FUZZY_B.cosa)) {
-      V4_FUZZY_B.cosa = 0.0;
-    } else {
-      V4_FUZZY_B.rtb_CoordinateTransformationC_b = V4_FUZZY_DW.TimeStampA_n;
-      lastU = &V4_FUZZY_DW.LastUAtTimeA_j;
-      if (V4_FUZZY_DW.TimeStampA_n < V4_FUZZY_DW.TimeStampB_gy) {
-        if (V4_FUZZY_DW.TimeStampB_gy < V4_FUZZY_B.cosa) {
-          V4_FUZZY_B.rtb_CoordinateTransformationC_b = V4_FUZZY_DW.TimeStampB_gy;
-          lastU = &V4_FUZZY_DW.LastUAtTimeB_h;
-        }
-      } else if (V4_FUZZY_DW.TimeStampA_n >= V4_FUZZY_B.cosa) {
-        V4_FUZZY_B.rtb_CoordinateTransformationC_b = V4_FUZZY_DW.TimeStampB_gy;
-        lastU = &V4_FUZZY_DW.LastUAtTimeB_h;
-      }
-
-      V4_FUZZY_B.cosa = (V4_FUZZY_B.Sum2 - *lastU) / (V4_FUZZY_B.cosa -
-        V4_FUZZY_B.rtb_CoordinateTransformationC_b);
-    }
-
-    /* Outputs for Atomic SubSystem: '<Root>/Fuzzy Logic  Controller - Altura' */
-    /* MATLAB Function: '<S8>/Evaluate Rule Antecedents' incorporates:
-     *  SignalConversion generated from: '<S37>/ SFunction '
-     */
-    V4_FUZZY_B.rtb_CoordinateTransformationC_l = 0.0;
-    V4_FUZZY_B.inputMFCache[0] = V4_FUZZY_trimf(V4_FUZZY_B.Sum2, b_8);
-    V4_FUZZY_B.inputMFCache[1] = V4_FUZZY_trimf(V4_FUZZY_B.Sum2, c_5);
-    V4_FUZZY_B.Dtot[0] = -0.4;
-    V4_FUZZY_B.Dtot[1] = 0.0;
-    V4_FUZZY_B.Dtot[2] = 0.4;
-    V4_FUZZY_B.inputMFCache[2] = V4_FUZZY_trimf(V4_FUZZY_B.Sum2, V4_FUZZY_B.Dtot);
-    V4_FUZZY_B.inputMFCache[3] = V4_FUZZY_trimf(V4_FUZZY_B.Sum2, d_5);
-    V4_FUZZY_B.inputMFCache[4] = V4_FUZZY_trimf(V4_FUZZY_B.Sum2, e_5);
-    V4_FUZZY_B.inputMFCache[5] = V4_FUZZY_trimf(V4_FUZZY_B.cosa, f_4);
-    V4_FUZZY_B.Dtot[0] = -0.3;
-    V4_FUZZY_B.Dtot[1] = 0.0;
-    V4_FUZZY_B.Dtot[2] = 0.3;
-    V4_FUZZY_B.inputMFCache[6] = V4_FUZZY_trimf(V4_FUZZY_B.cosa, V4_FUZZY_B.Dtot);
-    V4_FUZZY_B.inputMFCache[7] = V4_FUZZY_trimf(V4_FUZZY_B.cosa, g_3);
-    for (i = 0; i < 15; i++) {
-      V4_FUZZY_B.cosc = 1.0;
-      for (rtb_sec_0 = 0; rtb_sec_0 < 2; rtb_sec_0++) {
-        V4_FUZZY_B.rtb_CoordinateTransformationC_b = V4_FUZZY_B.inputMFCache
-          [(h_0[15 * rtb_sec_0 + i] + 5 * rtb_sec_0) - 1];
-        if ((V4_FUZZY_B.cosc > V4_FUZZY_B.rtb_CoordinateTransformationC_b) ||
-            (rtIsNaN(V4_FUZZY_B.cosc) && !rtIsNaN
-             (V4_FUZZY_B.rtb_CoordinateTransformationC_b))) {
-          V4_FUZZY_B.cosc = V4_FUZZY_B.rtb_CoordinateTransformationC_b;
-        }
-      }
-
-      V4_FUZZY_B.antecedentOutputs[i] = V4_FUZZY_B.cosc;
-      V4_FUZZY_B.rtb_CoordinateTransformationC_l += V4_FUZZY_B.cosc;
-    }
-
-    /* MATLAB Function: '<S8>/Evaluate Rule Consequents' incorporates:
-     *  Constant: '<S8>/Output Sample Points'
-     *  MATLAB Function: '<S11>/Evaluate Rule Consequents'
-     */
-    V4_FUZZY_trimf_l(V4_FUZZY_ConstP.OutputSamplePoints_Value_c, b_9,
-                     V4_FUZZY_B.dv);
-    V4_FUZZY_trimf_l(V4_FUZZY_ConstP.OutputSamplePoints_Value_c, c_6,
-                     V4_FUZZY_B.dv1);
-    V4_FUZZY_B.Dtot[0] = -0.01;
-    V4_FUZZY_B.Dtot[1] = 0.0;
-    V4_FUZZY_B.Dtot[2] = 0.01;
-    V4_FUZZY_trimf_l(V4_FUZZY_ConstP.OutputSamplePoints_Value_c, V4_FUZZY_B.Dtot,
-                     V4_FUZZY_B.dv2);
-    V4_FUZZY_B.Dtot[0] = 0.0;
-    V4_FUZZY_B.Dtot[1] = 0.05;
-    V4_FUZZY_B.Dtot[2] = 0.1;
-    V4_FUZZY_trimf_l(V4_FUZZY_ConstP.OutputSamplePoints_Value_c, V4_FUZZY_B.Dtot,
-                     V4_FUZZY_B.dv3);
-    V4_FUZZY_trimf_l(V4_FUZZY_ConstP.OutputSamplePoints_Value_c, d_6,
-                     V4_FUZZY_B.dv4);
-    for (i = 0; i < 101; i++) {
-      /* Outputs for Atomic SubSystem: '<Root>/Fuzzy Logic  Controller - Velocidad' */
-      V4_FUZZY_B.aggregatedOutputs[i] = 0.0;
-
-      /* End of Outputs for SubSystem: '<Root>/Fuzzy Logic  Controller - Velocidad' */
-      V4_FUZZY_B.outputMFCache[5 * i] = V4_FUZZY_B.dv[i];
-      V4_FUZZY_B.outputMFCache[5 * i + 1] = V4_FUZZY_B.dv1[i];
-      V4_FUZZY_B.outputMFCache[5 * i + 2] = V4_FUZZY_B.dv2[i];
-      V4_FUZZY_B.outputMFCache[5 * i + 3] = V4_FUZZY_B.dv3[i];
-      V4_FUZZY_B.outputMFCache[5 * i + 4] = V4_FUZZY_B.dv4[i];
-    }
-
-    for (i = 0; i < 15; i++) {
-      rtPrevAction = e_6[i];
-      V4_FUZZY_B.cosc = V4_FUZZY_B.antecedentOutputs[i];
-      for (rtb_sec_0 = 0; rtb_sec_0 < 101; rtb_sec_0++) {
-        V4_FUZZY_B.rtb_CoordinateTransformationC_o = V4_FUZZY_B.outputMFCache[(5
-          * rtb_sec_0 + rtPrevAction) - 1];
-        if ((V4_FUZZY_B.rtb_CoordinateTransformationC_o > V4_FUZZY_B.cosc) ||
-            (rtIsNaN(V4_FUZZY_B.rtb_CoordinateTransformationC_o) && !rtIsNaN
-             (V4_FUZZY_B.cosc))) {
-          V4_FUZZY_B.rtb_CoordinateTransformationC_o = V4_FUZZY_B.cosc;
-        }
-
-        if (V4_FUZZY_B.aggregatedOutputs[rtb_sec_0] <
-            V4_FUZZY_B.rtb_CoordinateTransformationC_o) {
-          V4_FUZZY_B.aggregatedOutputs[rtb_sec_0] =
-            V4_FUZZY_B.rtb_CoordinateTransformationC_o;
-        }
-      }
-    }
-
-    /* End of MATLAB Function: '<S8>/Evaluate Rule Consequents' */
-
-    /* MATLAB Function: '<S8>/Defuzzify Outputs' incorporates:
-     *  Constant: '<S8>/Output Sample Points'
-     *  MATLAB Function: '<S8>/Evaluate Rule Antecedents'
-     */
-    if (V4_FUZZY_B.rtb_CoordinateTransformationC_l == 0.0) {
-      V4_FUZZY_B.defuzzifiedOutputs_o = 0.039999999999999994;
-    } else {
-      V4_FUZZY_B.rtb_CoordinateTransformationC_o = 0.0;
-      V4_FUZZY_B.rtb_CoordinateTransformationC_b = 0.0;
-      for (i = 0; i < 101; i++) {
-        V4_FUZZY_B.rtb_CoordinateTransformationC_b +=
-          V4_FUZZY_B.aggregatedOutputs[i];
-      }
-
-      if (V4_FUZZY_B.rtb_CoordinateTransformationC_b == 0.0) {
-        V4_FUZZY_B.defuzzifiedOutputs_o = 0.039999999999999994;
-      } else {
-        for (i = 0; i < 101; i++) {
-          V4_FUZZY_B.rtb_CoordinateTransformationC_o +=
-            V4_FUZZY_ConstP.OutputSamplePoints_Value_c[i] *
-            V4_FUZZY_B.aggregatedOutputs[i];
-        }
-
-        V4_FUZZY_B.defuzzifiedOutputs_o = 1.0 /
-          V4_FUZZY_B.rtb_CoordinateTransformationC_b *
-          V4_FUZZY_B.rtb_CoordinateTransformationC_o;
-      }
-    }
-
-    /* End of MATLAB Function: '<S8>/Defuzzify Outputs' */
-    /* End of Outputs for SubSystem: '<Root>/Fuzzy Logic  Controller - Altura' */
     if (tmp_0) {
       /* MATLAB Function: '<Root>/MATLAB Function' */
       memset(&V4_FUZZY_B.stringOut_b[0], 0, sizeof(uint8_T) << 7U);
@@ -3580,13 +3520,13 @@ void V4_FUZZY::step()
       /* Switch: '<S30>/Switch3' incorporates:
        *  TransferFcn: '<S30>/Transfer Fcn1'
        */
-      V4_FUZZY_B.Switch3_l = -0.0003571 * V4_FUZZY_X.TransferFcn1_CSTATE +
-        0.03571 * V4_FUZZY_B.Output;
+      V4_FUZZY_B.Switch3 = -0.0003571 * V4_FUZZY_X.TransferFcn1_CSTATE + 0.03571
+        * V4_FUZZY_B.Output;
     } else {
       /* Switch: '<S30>/Switch3' incorporates:
        *  Constant: '<S30>/Constant4'
        */
-      V4_FUZZY_B.Switch3_l = 0.0;
+      V4_FUZZY_B.Switch3 = 0.0;
     }
 
     /* End of Switch: '<S30>/Switch3' */
@@ -3631,7 +3571,7 @@ void V4_FUZZY::step()
 
     /* Sum: '<S30>/SumOLA1' */
     V4_FUZZY_B.SumOLA1[0] = V4_FUZZY_B.Switch1[0];
-    V4_FUZZY_B.SumOLA1[1] = V4_FUZZY_B.Switch1[1] + V4_FUZZY_B.Switch3_l;
+    V4_FUZZY_B.SumOLA1[1] = V4_FUZZY_B.Switch1[1] + V4_FUZZY_B.Switch3;
     V4_FUZZY_B.SumOLA1[2] = V4_FUZZY_B.Switch1[2];
   }
 
@@ -3671,8 +3611,28 @@ void V4_FUZZY::step()
     /* End of Update for Derivative: '<Root>/Derivative4' */
     if (tmp) {
       /* Update for UnitDelay: '<Root>/Unit Delay3' */
-      V4_FUZZY_DW.UnitDelay3_DSTATE = V4_FUZZY_B.Switch3;
+      V4_FUZZY_DW.UnitDelay3_DSTATE = V4_FUZZY_B.Switch3_l;
+    }
 
+    /* Update for Derivative: '<Root>/Derivative' */
+    if (V4_FUZZY_DW.TimeStampA_n == (rtInf)) {
+      V4_FUZZY_DW.TimeStampA_n = (&V4_FUZZY_M)->Timing.t[0];
+      lastU = &V4_FUZZY_DW.LastUAtTimeA_j;
+    } else if (V4_FUZZY_DW.TimeStampB_g == (rtInf)) {
+      V4_FUZZY_DW.TimeStampB_g = (&V4_FUZZY_M)->Timing.t[0];
+      lastU = &V4_FUZZY_DW.LastUAtTimeB_h;
+    } else if (V4_FUZZY_DW.TimeStampA_n < V4_FUZZY_DW.TimeStampB_g) {
+      V4_FUZZY_DW.TimeStampA_n = (&V4_FUZZY_M)->Timing.t[0];
+      lastU = &V4_FUZZY_DW.LastUAtTimeA_j;
+    } else {
+      V4_FUZZY_DW.TimeStampB_g = (&V4_FUZZY_M)->Timing.t[0];
+      lastU = &V4_FUZZY_DW.LastUAtTimeB_h;
+    }
+
+    *lastU = V4_FUZZY_B.Sum2;
+
+    /* End of Update for Derivative: '<Root>/Derivative' */
+    if (tmp) {
       /* Update for UnitDelay: '<Root>/Unit Delay2' */
       V4_FUZZY_DW.UnitDelay2_DSTATE = V4_FUZZY_B.Switch2_b;
     }
@@ -3715,47 +3675,24 @@ void V4_FUZZY::step()
 
     /* End of Update for Derivative: '<Root>/Derivative1' */
 
-    /* Update for RateLimiter: '<Root>/Rate Limiter-theta_sp' */
-    V4_FUZZY_DW.PrevY_g = V4_FUZZY_B.RateLimitertheta_sp;
-    V4_FUZZY_DW.LastMajorTime = (&V4_FUZZY_M)->Timing.t[0];
-
     /* Update for Derivative: '<Root>/Derivative2' */
     if (V4_FUZZY_DW.TimeStampA_j == (rtInf)) {
       V4_FUZZY_DW.TimeStampA_j = (&V4_FUZZY_M)->Timing.t[0];
       lastU = &V4_FUZZY_DW.LastUAtTimeA_m;
-    } else if (V4_FUZZY_DW.TimeStampB_g == (rtInf)) {
-      V4_FUZZY_DW.TimeStampB_g = (&V4_FUZZY_M)->Timing.t[0];
+    } else if (V4_FUZZY_DW.TimeStampB_ge == (rtInf)) {
+      V4_FUZZY_DW.TimeStampB_ge = (&V4_FUZZY_M)->Timing.t[0];
       lastU = &V4_FUZZY_DW.LastUAtTimeB_fy;
-    } else if (V4_FUZZY_DW.TimeStampA_j < V4_FUZZY_DW.TimeStampB_g) {
+    } else if (V4_FUZZY_DW.TimeStampA_j < V4_FUZZY_DW.TimeStampB_ge) {
       V4_FUZZY_DW.TimeStampA_j = (&V4_FUZZY_M)->Timing.t[0];
       lastU = &V4_FUZZY_DW.LastUAtTimeA_m;
     } else {
-      V4_FUZZY_DW.TimeStampB_g = (&V4_FUZZY_M)->Timing.t[0];
+      V4_FUZZY_DW.TimeStampB_ge = (&V4_FUZZY_M)->Timing.t[0];
       lastU = &V4_FUZZY_DW.LastUAtTimeB_fy;
     }
 
     *lastU = V4_FUZZY_B.Sum1;
 
     /* End of Update for Derivative: '<Root>/Derivative2' */
-
-    /* Update for Derivative: '<Root>/Derivative' */
-    if (V4_FUZZY_DW.TimeStampA_n == (rtInf)) {
-      V4_FUZZY_DW.TimeStampA_n = (&V4_FUZZY_M)->Timing.t[0];
-      lastU = &V4_FUZZY_DW.LastUAtTimeA_j;
-    } else if (V4_FUZZY_DW.TimeStampB_gy == (rtInf)) {
-      V4_FUZZY_DW.TimeStampB_gy = (&V4_FUZZY_M)->Timing.t[0];
-      lastU = &V4_FUZZY_DW.LastUAtTimeB_h;
-    } else if (V4_FUZZY_DW.TimeStampA_n < V4_FUZZY_DW.TimeStampB_gy) {
-      V4_FUZZY_DW.TimeStampA_n = (&V4_FUZZY_M)->Timing.t[0];
-      lastU = &V4_FUZZY_DW.LastUAtTimeA_j;
-    } else {
-      V4_FUZZY_DW.TimeStampB_gy = (&V4_FUZZY_M)->Timing.t[0];
-      lastU = &V4_FUZZY_DW.LastUAtTimeB_h;
-    }
-
-    *lastU = V4_FUZZY_B.Sum2;
-
-    /* End of Update for Derivative: '<Root>/Derivative' */
     if (tmp) {
       /* Update for Memory: '<S30>/Memory' incorporates:
        *  Sum: '<S30>/SumOLA'
@@ -4071,7 +4008,7 @@ void V4_FUZZY::initialize()
     static const char_T b_zeroDelimTopic[18] = "/ekranoplano/odom";
 
     /* Start for InitialCondition: '<S30>/IC' */
-    memcpy(&V4_FUZZY_B.IC[0], &V4_FUZZY_ConstP.pooled11[0], 12U * sizeof(real_T));
+    memcpy(&V4_FUZZY_B.IC[0], &V4_FUZZY_ConstP.pooled12[0], 12U * sizeof(real_T));
 
     /* Start for InitialCondition: '<S30>/IC' */
     V4_FUZZY_DW.IC_FirstOutputTime = true;
@@ -4238,7 +4175,7 @@ void V4_FUZZY::initialize()
   V4_FUZZY_PrevZCX.Integrator_Reset_ZCE = UNINITIALIZED_ZCSIG;
 
   /* InitializeConditions for Memory: '<S30>/Memory2' */
-  memcpy(&V4_FUZZY_DW.Memory2_PreviousInput[0], &V4_FUZZY_ConstP.pooled11[0],
+  memcpy(&V4_FUZZY_DW.Memory2_PreviousInput[0], &V4_FUZZY_ConstP.pooled12[0],
          12U * sizeof(real_T));
 
   /* InitializeConditions for Integrator: '<S30>/Integrator' */
@@ -4268,6 +4205,10 @@ void V4_FUZZY::initialize()
   /* InitializeConditions for UnitDelay: '<Root>/Unit Delay3' */
   V4_FUZZY_DW.UnitDelay3_DSTATE = 1.0;
 
+  /* InitializeConditions for Derivative: '<Root>/Derivative' */
+  V4_FUZZY_DW.TimeStampA_n = (rtInf);
+  V4_FUZZY_DW.TimeStampB_g = (rtInf);
+
   /* InitializeConditions for Derivative: '<Root>/Derivative3' */
   V4_FUZZY_DW.TimeStampA_c = (rtInf);
   V4_FUZZY_DW.TimeStampB_c = (rtInf);
@@ -4276,16 +4217,9 @@ void V4_FUZZY::initialize()
   V4_FUZZY_DW.TimeStampA_p = (rtInf);
   V4_FUZZY_DW.TimeStampB_f = (rtInf);
 
-  /* InitializeConditions for RateLimiter: '<Root>/Rate Limiter-theta_sp' */
-  V4_FUZZY_DW.LastMajorTime = (rtInf);
-
   /* InitializeConditions for Derivative: '<Root>/Derivative2' */
   V4_FUZZY_DW.TimeStampA_j = (rtInf);
-  V4_FUZZY_DW.TimeStampB_g = (rtInf);
-
-  /* InitializeConditions for Derivative: '<Root>/Derivative' */
-  V4_FUZZY_DW.TimeStampA_n = (rtInf);
-  V4_FUZZY_DW.TimeStampB_gy = (rtInf);
+  V4_FUZZY_DW.TimeStampB_ge = (rtInf);
 
   /* InitializeConditions for RandomNumber: '<S68>/White Noise' */
   V4_FUZZY_DW.RandSeed[0] = 1529675776U;

@@ -1,5 +1,5 @@
 // Copyright 2022-2024 The MathWorks, Inc.
-// Generated 24-May-2026 10:28:32
+// Generated 26-May-2026 13:17:15
 #include "slros2_initialize.h"
 const std::string SLROSNodeName("V4_FUZZY");
 // V4_FUZZY/Publish

@@ -110,6 +110,7 @@ V4_FUZZY/Fuzzy Logic
 Controller - Velocidad
 V4_FUZZY/Gain-Z
 V4_FUZZY/Gain-roll_sp
+V4_FUZZY/Gain1
 V4_FUZZY/Goto
 V4_FUZZY/Goto1
 V4_FUZZY/Goto10
@@ -176,7 +177,6 @@ V4_FUZZY/Publish1
 V4_FUZZY/Publish2
 V4_FUZZY/Publish3
 V4_FUZZY/Ramp
-V4_FUZZY/Rate Limiter-theta_sp
 V4_FUZZY/Rate Limiter2
 V4_FUZZY/SUBSYSTEM_MODEL
 V4_FUZZY/SUBSYSTEM_MODEL/In1

@@ -73,8 +73,8 @@
 [FROM] V4_FUZZY/From19  <-  Tag: positionZ
 [FROM] V4_FUZZY/From2  <-  Tag: FUZZY_VEL
 [FROM] V4_FUZZY/From20  <-  Tag: FUZZY_ALTURA
-[FROM] V4_FUZZY/From21  <-  Tag: FUZZY_ELEVATOR
-[FROM] V4_FUZZY/From22  <-  Tag: FUZZY_ALERON
+[FROM] V4_FUZZY/From21  <-  Tag: FUZZY_ALTURA
+[FROM] V4_FUZZY/From22  <-  Tag: FUZZY_ALTURA
 [FROM] V4_FUZZY/From23  <-  Tag: theta
 [FROM] V4_FUZZY/From24  <-  Tag: theta
 [FROM] V4_FUZZY/From25  <-  Tag: phi
